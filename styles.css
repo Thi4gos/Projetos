@@ -1,0 +1,26 @@
+ /*Configurações globais das css */
+ body {
+    background-image: linear-gradient(to right, #2A46FA, #1629AD);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+ h1, h2, p {
+    color: black;
+}
+ section {
+    text-align: center;
+    background-color: #455EFF;
+    margin: 10px;
+    box-shadow:3px 3px 3px rgba(21, 21, 21, 0.49); /* pegar no dev tool*/
+    border-radius: 12px;
+}
+ 
+header {
+    color: #2a2929;   
+    text-decoration: solid;
+    text-align: center; 
+}
+.rodape {
+    color: rgb(139, 248, 153);
+    padding: 5px;
+}
