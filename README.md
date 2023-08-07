@@ -1,4 +1,4 @@
 # ProjetoSite
  Desenvolvimento e testes de sites
 
-Mundaça de arquivo
+Para documentação do meu progresso
