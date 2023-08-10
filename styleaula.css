@@ -1,0 +1,8 @@
+div#bloco {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    position: relative;
+    bottom: 50%;
+    border: 3px solid black;
+}
