@@ -29,15 +29,30 @@ section.normal {
     padding: 40px 0 40px 45px;
     font-size: 2.5em;
 }
-section.imagem {
+section.imagem-1 {
     background-image: url(pacote-d012/imagens/background001.jpg);
     padding: 40px 0 40px 45px;
     font-size: 2.5em;
+    background-position: cover;
+    background-attachment: fixed;
 }
-section.imagem p {
+section.imagem-2 {
     
-    background-color: rgba(20, 20, 20, 0.343);
-    display: inline-block;   
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    padding: 40px 0 40px 45px;
+    font-size: 2.5em;
+    background-position: cover;
+    background-attachment: fixed;   
+}
+p.image {
+    background-color: rgba(43, 43, 43, 0.49);
+    text-shadow: 1px 1px 3px rgba(46, 46, 46, 0.439);
+    display: inline-block;
+    padding: 20px;
+}
+p {
+    text-shadow: 1px 1px 3px black;
+    padding: 45px 0 45px 0;
 }
 a {
     color: rgb(6, 245, 6);
@@ -50,4 +65,5 @@ footer {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    font-size: 1.5em;
 }
