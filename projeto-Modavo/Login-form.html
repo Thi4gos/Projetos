@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modavo Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boostrap-meu.css">  
+</head>
+<body>
+    <div id="Logo">
+        <img src="https://t147f2.p3cdn1.secureserver.net/wp-content/uploads/2023/07/modavo-1.png?time=1696000264" alt="">
+        <h1>CPaaS Plataform</h1>
+    </div>
+    <div id="form">
+        <form action="valid-form.js" method="get" class="border border-left">
+
+            <label for="nome"><i class="fa-solid fa-user"></i></label>
+            <input type="text" name="nome" id="nome" required minlength="15" maxlength="60" placeholder="Nome">           
+            
+            <label for="login"><i class="fa-solid fa-envelope"></i></label>
+            <input type="email" name="login" id="login" placeholder="E-mail">
+            
+
+            <label for="data-nasc"><i class="fa-solid fa-calendar"></i></label>
+            <input type="date" name="data-nasc" id="data-nasc" required>
+
+            <label for="sex"><i class="fa-solid fa-venus-mars"></i></label>
+            <select name="sex" id="sexo" required>
+                <option value="none">Sexo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+
+            <label for="nome-mae">Nome da mãe</label>
+            <input type="text" name="nome-mae" id="nome-materno" required placeholder="">
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+
+            <label for="tel-cel">Telefone celular</label>
+            <input type="tel" name="tel-cel" id="tel">
+
+            <label for="tel-fix">Telefone fixo</label>
+            <input type="tel" name="tel-fix">
+
+            <label for="adress">Endereço</label>
+            <input type="text" name="adress" id="adress">
+
+            <label for="pass"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" name="pass" id="pass" placeholder="Senha">
+
+            <label for="pass-conf"><i class="fa-sharp fa-solid fa-lock"></i></label>
+            <input type="password" name="pass-conf" id="pass-conf" placeholder="Confirmar senha">
+
+            <input type="button" value="Cadastrar" class="btn btn-primary">
+        </form>
+    </div>
+    <script src="font icons java.js"></script>
+</body>
+</html>

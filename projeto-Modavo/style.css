@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    height: 100vh;
+    background-color: #2AADE5;
+}
+h1 {
+    text-align: center;
+    color: #2AADE5;
+}
+#Logo {
+    position: relative;
+    bottom: 100px;
+} 
+#Logo img {
+    position: relative;
+    
+}
+form {
+    display: flex; 
+    flex-direction: column;
+    row-gap: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.491);
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    max-width: 550px;
+    height: 95vh;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+input {
+    border: 0;
+    border-bottom: 2px solid black;
+}
+input:focus {
+    outline: none;        
+}
+
+    
+
