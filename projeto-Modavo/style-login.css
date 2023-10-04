@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    display: inline-block;
+}
+form {
+    display: flex; 
+    flex-direction: column;
+    row-gap: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.491);
+    background-color: aliceblue;
+    width: 550px;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;  
+}
+input {
+    width: 450px;
+    margin: auto;
+}
+.space {
+    border: none;
+    background-color: aliceblue;
+}
+.space:focus {
+    outline: none;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+img {
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+}
