@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modavo Inc.</title>
+    <link rel="stylesheet" href="style-copy.css">  
+</head>
+<body>  
+    <header>
+        <div id="Logo">
+                <img src="https://t147f2.p3cdn1.secureserver.net/wp-content/uploads/2023/07/modavo-1.png?time=1696000264" alt="">
+                <h1>CPaaS Plataform</h1>
+            </div>
+    </header> 
+    <div id="form">
+        <form action="local-storage" method="get" class="border border-left">
+            
+            <p id="alert">Insira todos os dados para cadastro</p>
+
+            <div>
+                <label for="nome"><i class="fa-solid fa-user"></i></label>
+                <input type="text" name="nome" id="nome"  minlength="15" maxlength="60" required>
+            </div>          
+            
+            <div>
+                <label for="login"><i class="fa-solid fa-envelope"></i></label>
+                <input type="email" name="login" id="login" required>
+            </div>
+            
+
+            <div>
+                <label for="data-nasc"><i class="fa-solid fa-calendar"></i></label>
+                <input type="date" name="data-nasc" id="data_nasc" required>
+            </div>
+
+            <div id="select">
+                <label for="sex"><i class="fa-solid fa-venus-mars"></i></label>
+                <select name="sex" id="sexo" required>
+                    <option value="none">Sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nome_mae">Nome da mãe</label>
+                <input type="text" name="nome_mae" id="nome_materno" required placeholder="">
+            </div>
+
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            </div>
+
+            <div>
+                <label for="tel_cel">Telefone celular</label>
+                <input type="tel" name="tel_cel" id="tel">
+            </div>
+
+            <div>
+                <label for="tel-fix">Telefone fixo</label>
+                <input type="tel" name="tel_fix" id="tel_fix">
+            </div>
+
+            <div>
+                <label for="adress">Endereço</label>
+                <input type="text" name="adress" id="adress">
+            </div>
+
+            <div>
+                <label for="pass"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" name="pass" id="pass" placeholder="Senha">
+            </div>
+
+            <div>
+                <label for="pass-conf"><i class="fa-sharp fa-solid fa-lock"></i></label>
+                <input type="password" name="pass-conf" id="pass_conf" placeholder="Confirmar senha">
+            </div>
+
+            <button id="button">Cadastro</button>
+        </form>
+    </div>  
+    <script src="font icons java.js"></script>
+    <script src="valid-form.js"></script>
+</body>
+</html>
