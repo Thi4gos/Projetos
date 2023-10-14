@@ -19,15 +19,18 @@ form {
     margin-top: 20px;
     padding: 20px;  
 }
+img {
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+}
 input {
     width: 450px;
     margin: auto;
-}
-.space {
     border: none;
     background-color: aliceblue;
 }
-.space:focus {
+input:focus {
     outline: none;
 }
 .data {
@@ -36,9 +39,4 @@ input {
     width: 450px;
     margin: auto;
     border-bottom: 2px solid black;
-}
-img {
-    width: 350px;
-    margin: auto;
-    padding: 10px;
 }
