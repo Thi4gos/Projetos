@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: #2AACE4;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: #2AACE4;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 7px 10px rgba(128, 128, 128, 0.505)
+}
+.logo {
+    height: 125px;
+    width: 100px;
+    left: 100px;
+}
+img {
+    width: 325px;
+    height: 77px;
+
+}
+                                      /* Parte direita do cabeçalho */
+.menu-bottons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+                                     /* Lista */
+ header ul {
+    display: flex;
+    gap: 20px;
+    margin: -5px;
+    margin-bottom: -5px;
+    list-style: none;
+    padding-right: 15px;
+}
+                                     /* Parte do ícone */
+.divider {
+    display: flex;
+    flex-direction: row;
+    width: 26px;
+    height: 23px;
+    margin-top: -5px;
+    cursor: pointer;
+}  
+.divider::before {
+    content: "";
+    display: block;
+    width: 3px; 
+    height: 20px; 
+    background-color: #333; 
+    margin-right: 10px; 
+}
+                                     /* Parte dos botões */
+.div-dir {
+    padding-left: 20px;
+}
+.div-dir button {  
+    font-size: 0.8em;
+    color: #ffffff; 
+    border-radius: 6px;  
+}
+.div-dir button:hover {
+    color: black;
+    background-color: #ffffff;   
+}
+                                /* Corpo do site */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 75px;
+    background-color: rgb(255, 255, 255);
+ }
+ main img {
+    width: 65px;
+    height: 50px;
+ }
+ ul {
+    list-style-position: inside;
+    list-style-type: square;
+    margin-top: 20px;
+    margin: auto;
+ }
+                                                /* seção 1 */
+
+ #pr {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    margin-right: auto;
+ }
+ #tittle {
+    display: flex;
+    width: 370px;
+    column-gap: 10px;
+    flex-direction: row;
+    justify-content: end;
+ }
+ .base {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 400px;
+    height: 2px;
+    background-color: #2AACE4;
+ }
+                                                /* seção 2*/
+#result p {
+    width: 500px;
+    margin-top: 30px;
+}
+#result span {
+    color: #2AACE4;
+    font-size: 1.2em;
+}
+#result h1 {
+    text-align: center;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+#info * {
+    padding: 10px;
+    font-weight: bold;
+}
+                                            /* seção 3 */
+#passos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    padding: 30px;
+    margin: 20px 0 0 0;
+}
+#passos img {
+    display: block;
+    margin: auto;
+}
+#pc img {
+    width: 130px;
+    height: 100px;
+}
+#alert img {
+    width: 115px;
+    height: 130px;
+}
+#cell-number img {
+    width: 110px;
+    height: 170px;
+}
+#cell-number p {
+    margin-bottom: 3rem;
+}
+#alert p {
+    margin-bottom: 3rem;
+}
+#passos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.for-pass {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: left;
+    max-width: 300px; /* Ajuste este valor para controlar a largura máxima do conteúdo */
+    margin: 0 10px; /* Adicione margens para espaçamento entre os elementos */
+}
+  
+.for-pass img {
+    max-width: 100px; /* Ajuste este valor para controlar o tamanho máximo da imagem */
+    margin-right: 10px; /* Adicione margem à direita para separar a imagem do texto */
+ }
+#pc img {
+    width: 130px;
+}
+  
+

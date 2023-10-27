@@ -1,45 +1,48 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+    padding: 0;
+    margin: 0;
 }
-header {
-    width: 100%;
-    height: 75px;
-    background-color: rgb(179, 0, 0);
-    color: rgb(255, 255, 255);
-    font-size: 1.2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 7px 10px rgba(128, 128, 128, 0.505)
-}
+                                        /* formulário */
 main {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    background-image: url(../imagens/Paisagem-azulada.jpg);
+}
+#Logo-modavo {
+    margin-top: 100px;
+}
+h1 {
+    color: #dca4ff;
 }
 form {
     display: flex; 
     flex-direction: column;
     row-gap: 5px;
-    border: 1px solid black;
     box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.491);
-    background-color: aliceblue;
     width: 550px;
+    border-radius: 20px;
     max-width: 550px;
     margin: auto;
     margin-top: 20px;
     padding: 20px;  
 }
 img {
-    width: 350px;
+    display: block;
     margin: auto;
-    padding: 10px;
+    height: 65px;
+    width: 365px;
 }
 input {
     width: 450px;
     margin: auto;
     border: none;
-    background-color: aliceblue;
+    background-color: transparent;
 }
 input:focus {
+    background-color: transparet;
     outline: none;
 }
 .data {
