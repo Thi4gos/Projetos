@@ -41,10 +41,10 @@
   }
                                             /* Cabeçalho */
 header a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 header a:hover {
-    color: #3ed5ff;
+    color: #000000;
     text-decoration: none;
 }
 header {
@@ -57,8 +57,8 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 75px;
-    background-color: #2AACE4;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0 7px 10px rgba(128, 128, 128, 0.505)
@@ -69,8 +69,9 @@ header {
     left: 100px;
 }
 img {
-    width: 325px;
-    height: 77px;
+    width: 240px;
+    height: 40px;
+    margin-left: 25px;
 
 }
                                       /* Parte direita do cabeçalho */
@@ -79,7 +80,7 @@ img {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
+    padding: 20px;;
 }
                                      /* Lista */
  header ul {
@@ -89,6 +90,7 @@ img {
     margin-bottom: -5px;
     list-style: none;
     padding-right: 15px;
+    color: #000000 ;
 }
                                      /* Parte do ícone */
 .divider {
@@ -112,8 +114,9 @@ img {
     padding-left: 20px;
 }
 .div-dir button {  
-    color: #ffffff; 
-    border-radius: 6px;  
+    color: #000000; 
+    border-radius: 6px;
+    border-color: #000000;
 }
 .div-dir button:hover {
     color: black;
