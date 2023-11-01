@@ -1,0 +1,90 @@
+<h1>Quem usa</h1>
+            <div class="listas-user">
+                <div>
+                    <h2>Finanças</h2>
+                    <ul>
+                        <li>Acesso ao portal/app</li>
+                        <li>
+                            Autenticação para
+                            transações bancárias
+                        </li>
+                        <li>
+                            Pagamentos Online  (PicPay, PayPal)
+                        </li>
+                        <li>
+                            Digital Wallets  (Google  Pay, Apple Pay,  Samsung Pay)
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Saúde</h2>
+                    <ul>
+                        <li>
+                            Acesso aoportal/app
+                        </li>
+                        <li>
+                            Agendamentos
+                        </li>
+                        <li>
+                            Tokens de  autorização
+                        </li>
+                        <li>
+                            Telemedicina
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Turismo</h2>
+                    <ul>
+                        <li>
+                            Acesso ao portal/app
+                        </li>
+                        <li>
+                            Acesso ao portal/app
+                        </li>
+                        <li>
+                            Acesso ao histórico
+                        </li>
+                        <li>
+                            Salvar dados de  pagamentos
+                        </li>
+                        <li>
+                            Recuperação de Senha
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Varejo</h2>
+                    <ul>
+                        <li>
+                            Acesso ao portal/app
+                        </li>
+                        <li>
+                            Salvar dados de  pagamentos
+                        </li>
+                        <li>
+                            Acesso ao  histórico
+                        </li>
+                        <li>
+                            Recuperação de Senha
+                        </li>
+                        <li>
+                            Recibo Eletrônico
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Governo</h2>
+                    <ul>
+                        <li>
+                            Acesso ao portal/app
+                        </li>
+                        <li>
+                            Gestão de  informações  Agendamentos
+                        </li>
+                        <li>
+                            Recuperação de Senha
+                        </li>
+                    </ul>
+                </div>
+            </div>

@@ -9,19 +9,17 @@ main {
     align-items: center;
     gap: 100px;
     height: 100vh;
-    background-image: url(../imagens/Paisagem-azulada.jpg);
+    background: radial-gradient(at 0% 0%,#1596ff,#2AACE4);
 }
 #Logo-modavo {
-    margin-top: 100px;
+    margin-top: 50px;
 }
-h1 {
-    color: #dca4ff;
-}
+
 form {
     display: flex; 
     flex-direction: column;
     row-gap: 5px;
-    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.491);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.298);
     width: 550px;
     border-radius: 20px;
     max-width: 550px;
@@ -44,6 +42,9 @@ input {
 input:focus {
     background-color: transparet;
     outline: none;
+}
+#envio {
+    margin-top: 25px;
 }
 .data {
     display: flex;

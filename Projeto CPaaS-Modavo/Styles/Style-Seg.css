@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
 }
-a {
-    color: white;
+header a {
+    color: rgb(0, 0, 0);
 }
-a:hover {
-    color: #2AACE4;
+header a:hover {
+    color: #000000;
     text-decoration: none;
 }
 header {
@@ -19,20 +19,21 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 75px;
-    background-color: #2AACE4;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 4px 9px rgba(128, 128, 128, 0.505)
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.505)
 }
 .logo {
     height: 125px;
     width: 100px;
     left: 100px;
 }
-img {
-    width: 325px;
-    height: 77px;
+header img {
+    width: 240px;
+    height: 40px;
+    margin-left: 25px;
 
 }
                                       /* Parte direita do cabeçalho */
@@ -74,9 +75,9 @@ img {
     padding-left: 20px;
 }
 .div-dir button {  
-    font-size: 0.8em;
-    color: #ffffff; 
-    border-radius: 6px;  
+    color: #000000; 
+    border-radius: 6px;
+    border-color: #000000;
 }
 .div-dir button:hover {
     color: black;
@@ -91,44 +92,43 @@ main {
     margin-top: 75px;
     background-color: rgb(255, 255, 255);
  }
- main img {
-    width: 50px;
-    height: 50px;
- }
- ul {
+main ul {
     list-style-position: inside;
     list-style-type: square;
     margin-top: 20px;
     margin: auto;
  }
+main ul::marker {
+    color: #2AACE4;
+ }
+ #result, #passos, #user-list, #beneficios {
+    width: 80%;
+ }
                                                 /* seção 1 */
-
  #pr {
     display: flex;
     flex-direction: column;
     padding: 20px;
     position: relative;
     margin-right: auto;
+    margin-top: 80px;
  }
+
  #tittle {
-    display: flex;
-    width: 370px;
-    column-gap: 10px;
-    flex-direction: row;
-    justify-content: end;
+    width: 400px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
  }
  .base {
     position: absolute;
     left: 0;
-    top: 75px;
+    top: 124px;
     width: 400px;
     height: 2px;
     background-color: #2AACE4;
  }
                                                 /* seção 2*/
-#result {
-    width: 100%;
-}
 #result p {
     width: 800px;
     margin-top: 30px;  
@@ -136,9 +136,6 @@ main {
 #result span {
     color: #2AACE4;
     font-size: 1.2em;
-}
-#result h1 {
-    text-align: center;
 }
 #info {
     display: flex;
@@ -148,8 +145,6 @@ main {
     column-gap: 100px;
     max-width: 100%;
     font-size: 1.5em;
-}
-#info * {
     padding: 10px;
     font-weight: bold;
 }
@@ -160,53 +155,56 @@ main {
     column-gap: 100px;
     padding: 30px;
     margin: 20px 0 0 0;
-    width: 100%;
     font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
 }
 #passos img {
     display: block;
     margin: auto;
 }
 #pc img {
-    width: 130px;
-    height: 90px;
-}
-#alert img {
-    width: 115px;
-    height: 130px;
-}
-#cell-number img {
-    width: 110px;
+    width: 280px;
     height: 170px;
 }
-#cell-number p {
-    margin-bottom: 3rem;
+#alert img {
+    width: 150px;
+    height: 150px;
 }
 #alert p {
     margin-bottom: 3rem;
 }
-#passos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
+#cell-number img {
+    width: 82px;
+    height: 150px;
+}
+#cell-number p {
+    margin-bottom: 3rem;
+} 
 .for-pass {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 30px;
     text-align: left;
-    max-width: 300px; /* Ajuste este valor para controlar a largura máxima do conteúdo */
-    margin: 0 10px; /* Adicione margens para espaçamento entre os elementos */
 }
-  
-.for-pass img {
-    max-width: 100px; /* Ajuste este valor para controlar o tamanho máximo da imagem */
-    margin-right: 10px; /* Adicione margem à direita para separar a imagem do texto */
- }
-#pc img {
-    width: 130px;
-}
-  
 
+                                            /* Seção 4 */
+
+
+
+
+
+/* Seção 5 */
+#beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+#benefícios ul {
+    display: block;
+    width: 50%;
+    
+}
+                                                /* Rodapé */

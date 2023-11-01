@@ -61,7 +61,7 @@ header {
     color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 7px 10px rgba(128, 128, 128, 0.505)
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.505)
 }
 .logo {
     height: 125px;
@@ -183,7 +183,7 @@ main {
     width: 610px;
  }
 
- #inf-2FA {
+#inf-2FA {
     display: flex;
     margin-top: 20px;
     background-color: #f1f1f178;
@@ -198,30 +198,51 @@ main {
     width: 135px;
     height: 135px;
  }
-
-
-#inf-GVC {
-    
-    display: flex;
-    
+  #inf-2FA a {
+  width: 70%
 }
-#inf-GVC div {
+#inf-2FA a:hover {
+  transform: scale(1.1);
+}
+
+#inf-GVC { 
+  display: flex;   
+}
+  #inf-GVC div {
     display: flex;
     flex-direction: column;
     width: 610px;
 }
-#inf-num-masc {
+#inf-GVC a {
+  width: 80%;
+}
+#inf-GVC a:hover {
+  transform: scale(1.1);
+}
+  #inf-num-masc {
     background-color: #f1f1f178;
     display: flex;
 }
-#inf-SMS-auto {
+#inf-num-masc a {
+  width: 80%;
+}
+#inf-num-masc a:hover {
+  transform: scale(1.1);
+}
+  #inf-SMS-auto {
     display: flex;
 }
-#inf-SMS-auto div {
+  #inf-SMS-auto div {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 610px;
 }
-
+#inf-SMS-auto a {
+  box-sizing: border-box;
+  width: 80%;
+}
+#inf-SMS-auto a:hover {
+  transform: scale(1.1);
+}
                                                 
