@@ -39,7 +39,20 @@
   [transition-style="in:wipe:left"] {
     animation: 3.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
   }
-                                            /* Cabeçalho */
+  /* Cabeçalho */
+  * {
+    padding: 0;
+    margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+    height: 100vh;
+}
+main {
+    height: 100vh;
+}
 header a {
     color: rgb(0, 0, 0);
 }
@@ -68,7 +81,7 @@ header {
     width: 100px;
     left: 100px;
 }
-img {
+header img {
     width: 240px;
     height: 40px;
     margin-left: 25px;
@@ -80,19 +93,18 @@ img {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;;
+    padding: 20px;
 }
-                                     /* Lista */
- header ul {
+                                      /* Lista */
+  header ul {
     display: flex;
     gap: 20px;
     margin: -5px;
     margin-bottom: -5px;
     list-style: none;
     padding-right: 15px;
-    color: #000000 ;
 }
-                                     /* Parte do ícone */
+                                      /* Parte do ícone */
 .divider {
     display: flex;
     flex-direction: row;
@@ -100,6 +112,7 @@ img {
     height: 23px;
     margin-top: -5px;
     cursor: pointer;
+    color: #000000;
 }  
 .divider::before {
     content: "";
@@ -109,18 +122,12 @@ img {
     background-color: #333; 
     margin-right: 10px; 
 }
-                                     /* Parte dos botões */
+                                      /* Parte dos botões */
 .div-dir {
     padding-left: 20px;
 }
-.div-dir button {  
-    color: #000000; 
+.div-dir button {     
     border-radius: 6px;
-    border-color: #000000;
-}
-.div-dir button:hover {
-    color: black;
-    background-color: #ffffff;   
 }
                                      /* Corpo do Site */
 main {
