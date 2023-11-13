@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins/Poppins-ExtraBold.ttf) format('ttf');
+}
+:root {
+    --cor50: #F1F9FE;
+--cor100: #E2F2FC;
+--cor200: #BEE6F9;
+--cor300: #85D1F4;
+--cor400: #44BAEC;
+--corPrincipal: #2AACE4;
+--cor600: #0E82BB;
+--cor700: #0D6797;
+--cor800: #0F587D;
+--cor900: #124968;
+--cor950: #0C2F45;
+}
+#passos {
+    display: flex;
+    flex-direction: column;
+    column-gap: 100px;
+    padding: 30px;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+}
+#passos img {
+    display: block;
+    margin: auto;
+}        
+.titulo-de-passos {
+    position: relative;
+}
+.base-titulo-passos {
+    position: absolute;                             /* PASSO A PASSO DE COMO A SOLUÇÃO FUNCIONA*/
+    left: -3px;
+    top: 50px;
+    width: 282px;
+    height: 2px;
+    background-color: #2AACE4; 
+}
+
+.passos-passos {
+    display: flex;
+    gap: 20px;
+    margin: 100px 0 100px 0;
+}
+              /* PARTE 2FA */
+                
+                .for-pass {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 30px;
+}
+                #pc img {
+                    width: 280px;
+                    height: 170px;
+                }
+
+                #alert img {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                #alert p {
+                    margin-bottom: 3rem;
+                }
+
+                #cell-number img {
+                    width: 82px;
+                    height: 150px;
+                }
+
+                #cell-number p {
+                    margin-bottom: 3rem;
+}
+                /* PARTE GVC */
+                .imagem-GVC  {                   
+                            width: 150px;
+                            height: 150px;
+                            margin-bottom: 20px;
+                        }
