@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Solução 2FA</title>
     <link rel="stylesheet" href="../AD+/boostrap-meu.css">
-    <link rel="stylesheet" href="../AD+/boostrap-meu.css">
     <link rel="stylesheet" href="../Styles/Style-Seg.css">
-    <link rel="stylesheet" href="../Styles/headerstyle.css">
-    <link rel="stylesheet" href="../Styles/footer-style.css">
     <link rel="stylesheet" href="../Styles/style-passos.css">
     <link rel="stylesheet" href="../AD+/script.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="shortcut icon" href="imagens/cadeado.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sriracha&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" src="../AD+/AOS.css">
+    <script src="../AD+/AOS.js"></script>   
+    <link rel="stylesheet" href="../AD+/font icons style.css">
+    <link rel="shortcut icon" href="../imagens/cadeado.png" type="image/x-icon">
 </head>
 <body> <!---->
     <header>
@@ -34,16 +28,18 @@
                 <i class="fa-solid fa-moon"></i>
             </div>                         
             <div class="div-dir">
-                <button  class="btn btn-outline-dark">Login</button>
-                <button  class="btn btn-outline-dark">Cadastre-se</button>
+                <button  class="btn btn-outline-primary">Login</button>
+                <button  class="btn btn-outline-primary">Cadastre-se</button>
             </div>
         </div>
     </header>
     <main>
         <section id="pr">
-            <div id="tittle-2FA" data-aos="fade-right" data-aos-duration="2700"  data-aos-offset="-400" >
-                <h1>2FA - Autenticação de dois fatores</h1>               
-            </div>          
+            
+            <h1 id="tittle-pr" data-aos="fade-right" data-aos-duration="2700"  data-aos-offset="-400">
+                2FA - Autenticação de dois fatores
+            </h1>               
+                     
         </section>
         <section id="result">
             <div id="info">
@@ -88,52 +84,50 @@
             </div>
         </section>            
         <section id="beneficios">
-            <div class="titulo-beneficios">
-                <h1>Benefícios 2FA</h1>
-                <div class="base-titulo-beneficios"></div>
-            </div>
-            <ul>
-                <li>
-                    <span><i class="fa fa-check" style="color:#2AACE4"></i>
-                    </span>
-                    <span>Ofereça segurança aprimorada para seus clientes.</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-check" style="color:#2AACE4"></i>
-                    </span>
-                    <span>Reduza casos de fraude e invasões e evite o acesso a dados por invasores.</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-check" style="color:#2AACE4"></i>
-                    </span>
-                    <span>Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail.</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-check" style="color:#2AACE4"></i>
-                    </i></span>
-                    <span>Flexibilidade de canais garante que o usuário conseguirá completar a tarefa desejada  mesmo quando tiver problema com um deles.</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-check" style="color:#2AACE4"></i>
-                    </span>
-                    <span>API simples e de rápida implementação.</span>
-                </li>
-                <li>
-                    <span><i class="fa fa-check" style="color:#2AACE4"></i>
-                    </i></span>
-                    <span>
+            
+            <h1 class="titulo">Benefícios 2FA</h1>
+           
+            <div class="conjunto-beneficos">
+                <div class="item-beneficios">
+                    <p class="pequeno">
+                        Ofereça segurança aprimorada para seus clientes
+                    </p>
+                </div>
+                <div class="item-beneficios">
+                    <p class="pequeno">
+                        Reduza casos de fraude e invasões e evite o acesso a dados por invasores
+                    </p>
+                </div>
+                <div class="item-beneficios">
+                    <p class="pequeno"> 
+                        Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail
+                    </p>
+                </div>
+               
+                <div class="item-beneficios">
+                    <p class="pequeno">
+                        API simples e de rápida implementação
+                    </p>
+                </div>
+                <div class="item-beneficios">
+                    <p>
+                        Flexibilidade de canais garante que o usuário conseguirá completar a tarefa desejada  mesmo quando tiver problema com um deles
+                    </p>
+                </div>
+                <div class="item-beneficios">
+                    <p>
                         Plataforma intuitiva que permite visualizar relatórios de uso por dia, mês ou ano e
-                        pesquisar usando diversos critérios de filtro.
-                    </span>
-                </li>
-            </ul>
+                        pesquisar usando diversos critérios de filtro
+                    </p>
+                </div>
+            </div>
+            
         </section>
         <section id="lista-usuario">
-            <div class="titulo">
-                <h1>Usado em aplicativos de:</h1>
-                <div class="base-titulo-usuario"></div>
-            </div>
-           <div class="container-usuarios">
+    
+            <h1 class="titulo">Usado em aplicativos de:</h1>
+            
+            <div class="container-usuarios">
                <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCA2djE2aDIwdi0xNmgtMjB6bTEwIDEzYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzkgNSA1LTIuMjM5IDUtNSA1em0uMjkyLTIuMTE0di42MTRoLS41ODR2LS41ODJjLS42MDMtLjAxLTEuMjI5LS4xNTQtMS43NS0uNDI0bC4yNjYtLjk1OGMuNTU4LjIxNiAxLjMuNDQ1IDEuODgxLjMxNS42NzEtLjE1Mi44MDktLjg0Mi4wNjgtMS4xNzUtLjU0My0uMjUxLTIuMjA1LS40NjktMi4yMDUtMS44OTEgMC0uNzk1LjYwNS0xLjUwOCAxLjc0LTEuNjYzdi0uNjIyaC41ODR2LjU5M2MuNDIyLjAxMS44OTYuMDg1IDEuNDI2LjI0NmwtLjIxMi45NmMtLjQ0OC0uMTU2LS45NDMtLjMtMS40MjUtLjI3LS44NjguMDUxLS45NDYuODAzLS4zMzkgMS4xMTguOTk4LjQ2OSAyLjMwMS44MTggMi4zMDEgMi4wNjguMDAxIDEuMDAyLS43ODQgMS41MzctMS43NTEgMS42NzF6bTYuNzA4LTEyLjg4NmgtMTl2MTVoLTJ2LTE3aDIxdjJ6Ii8+PC9zdmc+">
                 <h1>Finanças</h1>
                 <div class="divisoria"></div>
@@ -189,11 +183,10 @@
             </a>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../AD+/Jquery.js"></script>
+    <script src="../AD+/popperJS.js"></script>
+    <script src="../AD+/boostrapscript-meu.js" ></script>
     <script src="../AD+/font icons java.js"></script>
-    <script href="https://unpkg.com/transition-style"></script>
     <script>
         AOS.init();
     </script>
