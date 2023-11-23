@@ -114,15 +114,17 @@ main {
     margin-top: 75px;
     background-color: rgb(255, 255, 255);
  }
- #result, #passos, #user-list, #beneficios, #outro-usuario, #problema {
+ #result, #user-list, #beneficios, #outro-usuario, #problema {
     width: 80%;
+    
  }
  .titulo {
     position: relative;
     display: inline-block;
+    
     font-family: 'Poppins-regular';
 }
-.titulo::after {
+.titulo::after {                      /* CONFIGURAÇÕES GERAIS */
     content: "";
     position: absolute;
     left: 0px;
@@ -130,6 +132,13 @@ main {
     width: 101%;
     height: 2px;
     background-image: linear-gradient(-90deg, var(--cor400), var(--cor600));
+}
+ul {
+    list-style-type: none;
+}
+li {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
                                                 /* seção 1 */
 
@@ -144,7 +153,7 @@ main {
 #tittle-pr {
     display: inline-block;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;               /* TITULOS PRINCIPAIS */
     font-weight: bolder;
 }
 #tittle-pr::after {
@@ -159,12 +168,20 @@ main {
 } 
 
                                                 /* seção 2*/
+#result-SMS {
+    width: 100%;
+}
 #result ul {
     list-style-type: none;
 }
-#result p {
+.p-destaque {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+.p-definicao {
     width: 800px;
-    margin-top: 30px;  
+    margin: 20px 0 0 80px;
 }
 #result span {
     color: #2AACE4;
@@ -181,26 +198,57 @@ main {
     padding: 10px;
     font-weight: bold;
 }
-.lista-GVC li {
-    margin-bottom: 10px;
+#info-SMS {
+    display: flex;                               
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 80px;
+    width: 100%;                             /* DESCRIÇÃO GERAL DA SOLUÇÃO */
+    font-size: 1.5em;
+    font-weight: bold;
 }
-
-                                            /* seção 3 */
-
-                                        /* Seção-GVC Problema*/
-#problema {
+.definicao-destaque {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-weight: bold;
+    
 }
-.texto ul {
-    list-style-type: none;
+.destaque {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 901px;
 }
-.texto li {
-      margin-bottom: 10px;
+.definicao {
+    width: 901px;
 }
+.item-destaque {
+    width: 315px;
+    height: 265px;
+    box-shadow: 2px 2px 10px rgba(156, 152, 152, 0.42);
+    border-radius: 20px;
+}
+
+.span-destaque {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 2.2em;
+    color: var(--corPrincipal);
+}
+
+
+                                            /* seção 3 */
+
+
+
+                                        /* Seção-GVC Problema*/
+
 
                                         /* Seção 4 */
 #beneficios {
@@ -246,8 +294,8 @@ main {
     align-items: center;
     justify-content: center;
     row-gap: 50px;
-    width: 80%;
-    max-height: 300px;
+    height: 300px;
+    margin: 60px 0;
     text-align: center;
 }
 #lista-usuario img {
@@ -256,43 +304,52 @@ main {
     width: 100px;
     height: 100px;                                /* LISTA DE NICHOS QUE UTILIZAM DA FERRAMENTA*/
 }
-.divisoria {  
-    left: -5px;
-    top: 50px;
-    width: 130px;
-    height: 2px;
+#lista-usuario-SMS {
+    display: block;
     margin: auto;
-    margin-bottom: 10px;
-    border-radius: 100%;
-    box-shadow: -2px 0 5px #2AACE4;
-    background-color: #2AACE4;
+    width: auto;
+    height: auto;
 }
-.divisoria-baixo {
-    left: -5px;
-    top: 50px;
-    width: 130px;
-    height: 2px;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 100%;
-    background-color: #2AACE4;
-}
-
 .container-usuarios {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
     align-items: center;
     justify-content: center;
+    
 }
+.container-usuarios-SMS {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: start;
+    justify-content: start;
+    margin: 50px 0;
+}
+.container-usuarios-SMS h1 {
+    width: 250px;
+    text-align: center;   
+}
+
 .container-usuarios img {
     width: auto;
     height: auto;
 }
-/*
+.phone-SMS {
+    width: 250px;
+    height: 231px;
+}
+                                /* NUM */
+.dif {
+    width: auto;
+    height: auto;
+} 
+                            /* NUM-USO-SEG */ 
+.descricao-usuario {
+    width: ;
 
-*/
-/* Rodapé */
+}                             
+                                                                    /* Rodapé */
 footer {
     position: absolute;
     display: flex;
@@ -300,7 +357,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 2px solid #7676767e;
-    bottom: -1440px;
+    bottom: -1400px;
     width: 100%;
     height: 100px;
 }
