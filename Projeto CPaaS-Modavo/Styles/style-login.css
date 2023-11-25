@@ -12,7 +12,7 @@ main {
     background: radial-gradient(at 0% 0%,#1596ff,#2AACE4);
 }
 #Logo-modavo {
-    margin-top: 50px;
+    padding: 15px;
 }
 
 form {
@@ -42,6 +42,12 @@ input {
 input:focus {
     background-color: transparet;
     outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
 #envio {
     margin-top: 25px;
