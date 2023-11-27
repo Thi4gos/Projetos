@@ -16,17 +16,22 @@
 
         <div class="menu-bottons">
             <ul>
-                <li><a href="@">Produtos</a></li>
-                <li><a href="@">Tarifas</a></li>
-                <li><a href="@">CPaaS</a></li>
-                <li><a href="@">Central de Ajuda</a></li>
+                <li class="dropdown">
+                    <a href="#">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="2FA.html">Autenticação de dois fatores</a>                        
+                        <a href="Num.html">Número máscara</a>
+                        <a href="SMS.html">SMS automático</a>
+                    </div>
+                </li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">CPaaS</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
             </ul>
-            <div class="divider">
-                <i class="fa-solid fa-moon"></i>
-            </div>                         
+            <i id="botao_contraste" onclick="contraste()" class="fa-solid fa-moon"></i>                                   
             <div class="div-dir">
-                <button  class="btn btn-outline-primary">Login</button>
-                <button  class="btn btn-outline-primary">Cadastre-se</button>
+                <button class="btn btn-outline-primary">Login</button>
+                <button class="btn btn-outline-primary">Cadastre-se</button>
             </div>
         </div>
     </header>
@@ -41,16 +46,16 @@
         <section id="result">
             <div id="info">           
                 <div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1300">
                         <p>
                             Esse novo recurso do Google, exclusivo para  telefones Android, permite que empresas exibam  para o cliente na hora da chamada sua marca,  logotipo e até mesmo o motivo da chamada.
                         </p>
                         <p>A Telecall é a primeira operadora de telecom no  Brasil a oferecer esse recurso do Google.</p>
                     </div>
                     
-                        <h1 class="titulo">Compatibilidade</h1>                       
+                        <h1 class="titulo" data-aos="fade-right" data-aos-duration="1300">Compatibilidade</h1>                       
                     
-                    <ul class="lista-GVC">
+                    <ul class="lista-GVC" data-aos="fade-right" data-aos-duration="1400">
                         <li>
                             Exclusivo para sistema operacional Android
                             através do aplicativo Telefone.
@@ -65,12 +70,16 @@
                     
                 </div>
             </div>       
+            <div class="botoes">
+                <button data-aos="fade-up-right" data-aos-duration="1700" class="btn btn-primary">Faça um teste grátis</button>
+                <button data-aos="fade-up-right" data-aos-duration="1750" class="btn btn-success">Fale com um especialista</button>
+            </div> 
         </section>
         <section id="passos">
             
-            <h1 class="titulo">Como funciona</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Como funciona</h1>
             
-            <div class="passos-passos">
+            <div class="passos-passos" data-aos="zoom-in" data-aos-duration="1600">
                                 
                 <div >
                     <img class="imagem-GVC" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zLjg0OCAxOWgtLjg0OGMtLjc5NiAwLTEuNTU5LS4zMTYtMi4xMjEtLjg3OS0uNTYzLS41NjItLjg3OS0xLjMyNS0uODc5LTIuMTIxdi0zYzAtNy4xNzUgNS4zNzctMTMgMTItMTNzMTIgNS44MjUgMTIgMTN2M2MwIC43OTYtLjMxNiAxLjU1OS0uODc5IDIuMTIxLS41NjIuNTYzLTEuMzI1Ljg3OS0yLjEyMS44NzloLS44NDhjLTIuNjkgNC42MzMtNi45MDQgNS04LjE1MiA1LTEuMjQ4IDAtNS40NjItLjM2Ny04LjE1Mi01em0xNi4xNTItNS44NzZjLS42MDEuMjM2LTEuMjY5LS4xOC0xLjI2OS0uNzk3IDAtLjMwNC0uMDIyLS42MS0uMDUzLS45MTUtMS43NjEtLjI1NC0zLjYxOC0xLjkyNi0zLjY5OS0zLjcyMy0xLjMxNSAyLjAwNS00LjUyNSA0LjE3LTcuMDQ0IDQuMTcgMS4wODYtLjY5OSAxLjgzOS0yLjc3MyAxLjkwMy0zLjUwOC0uNTgxIDEuMDkyLTIuODk4IDMuMTM2LTQuNTUxIDMuNDg3bC0uMDE4LjQ4OWMwIC42MTktLjY2OSAxLjAzMi0xLjI2OS43OTd2My43NzFjLjI4Ny4yNTYuNjMyLjQ2NCAxLjA0MS41OTQuMjI1LjA3Mi40MTIuMjI0LjUyMS40MjQgMi4yMDYgNC4wNDYgNS40MjYgNC4wODcgNi40MzggNC4wODcuOTI5IDAgMy43MTktLjAzNSA1Ljg3Ny0zLjE2OS0xLjA3MS40MzMtMi4yNjUuNjA0LTMuNzU5LjY1My0uMzcuNi0xLjE4IDEuMDE2LTIuMTE4IDEuMDE2LTEuMjg4IDAtMi4zMzMtLjc4NC0yLjMzMy0xLjc1czEuMDQ1LTEuNzUgMi4zMzMtMS43NWMuOTMzIDAgMS43MzguNDExIDIuMTEyIDEuMDA1IDEuOS0uMDI2IDQuMzM2LS4zMzQgNS44ODgtMi42NDV2LTIuMjM2em0tMTEtLjYyNGMuNjg2IDAgMS4yNDMuNjcyIDEuMjQzIDEuNXMtLjU1NyAxLjUtMS4yNDMgMS41LTEuMjQzLS42NzItMS4yNDMtMS41LjU1Ny0xLjUgMS4yNDMtMS41em02IDBjLjY4NiAwIDEuMjQzLjY3MiAxLjI0MyAxLjVzLS41NTcgMS41LTEuMjQzIDEuNS0xLjI0My0uNjcyLTEuMjQzLTEuNS41NTctMS41IDEuMjQzLTEuNXptNS40NzgtMS41aDEuMzU3Yy0uODU2LTUuMTE4LTQuOTM3LTktOS44MzUtOS00Ljg5OCAwLTguOTc5IDMuODgyLTkuODM1IDloMS4zNTdjLjUyLTQuMDIzIDMuNDExLTcuNzIyIDguNDc4LTcuNzIyczcuOTU4IDMuNjk5IDguNDc4IDcuNzIyeiIvPjwvc3ZnPg==">
@@ -95,9 +104,9 @@
         <section id="problema">
             <div class="texto">
                 
-                <h1 class="titulo">Ligações de spam</h1>                    
+                <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Ligações de spam</h1>                    
                 
-                <ul>
+                <ul data-aos="zoom-in" data-aos-duration="1600">
                     <li>O Brasil é o país que mais sofre com ligações  de spam no mundo.</li>
                     <li>Desde	2017,	as	chamadas	telefônicas	de  spam no Brasil aumentaram 141%.</li>
                     <li>
@@ -105,37 +114,39 @@
                         de spam por mês.
                     </li>
                 </ul>
-            </div>    
-            <img src="" alt="">           
+
+            </div>             
         </section>
         <section id="beneficios">
             
-            <h1 class="titulo">Benefícios</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Benefícios</h1>
                            
-            <div class="item-beneficios">
-                <p>
-                    Estabeleça Confiança
-                    Clientes são mais propensos a atender chamadas de organizações com os quais estão  familiarizadas e com as quais já tem relação.
-                </p>
-            </div>
-            
-            <div class="item-beneficios">
-                <p>
-                    Agilize a Conexão
-                    Quando o motivo da chamada é claro, a chance de o cliente atender é muito maior e a conexão  com ele mais rápida e eficiente.
-                </p>
-            </div>
-                           
-            <div class="item-beneficios">
-                <p>
-                    Melhore a Experiência do Cliente
-                    O nome da marca, logotipo e a visualização do motivo da chamada oferecem uma experiencia melhor e muito mais amigável para o cliente.
-                </p>
+            <div class="conjunto-beneficos" data-aos="zoom-in" data-aos-duration="1600">
+                <div class="item-beneficios item-dif-GVC">
+                    <p>
+                        Estabeleça Confiança
+                        Clientes são mais propensos a atender chamadas de organizações com os quais estão  familiarizadas e com as quais já tem relação.
+                    </p>
+                </div>
+                
+                <div class="item-beneficios item-dif-GVC">
+                    <p>
+                        Agilize a Conexão
+                        Quando o motivo da chamada é claro, a chance de o cliente atender é muito maior e a conexão  com ele mais rápida e eficiente.
+                    </p>
+                </div>
+                
+                <div class="item-beneficios item-dif-GVC">
+                    <p>
+                        Melhore a Experiência do Cliente
+                        O nome da marca, logotipo e a visualização do motivo da chamada oferecem uma experiencia melhor e muito mais amigável para o cliente.
+                    </p>
+                </div>
             </div>              
             
         </section>
     </main>
-    <footer>
+    <footer id="footer-GVC">
         <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
         <div class="redes">
             <a href="https://www.facebook.com/TelecallBr"><span>

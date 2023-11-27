@@ -16,17 +16,22 @@
 
         <div class="menu-bottons">
             <ul>
-                <li><a href="@">Produtos</a></li>
-                <li><a href="@">Tarifas</a></li>
-                <li><a href="@">CPaaS</a></li>
-                <li><a href="@">Central de Ajuda</a></li>
+                <li class="dropdown">
+                    <a href="#">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="GVC.html">Goggle chamadas verificadas</a>
+                        <a href="Num.html">Número máscara</a>
+                        <a href="SMS.html">SMS automático</a>
+                    </div>
+                </li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">CPaaS</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
             </ul>
-            <div class="divider">
-                <i class="fa-solid fa-moon"></i>
-            </div>                         
+            <i id="botao_contraste" onclick="contraste()" class="fa-solid fa-moon"></i>                                   
             <div class="div-dir">
-                <button  class="btn btn-outline-primary">Login</button>
-                <button  class="btn btn-outline-primary">Cadastre-se</button>
+                <button class="btn btn-outline-primary">Login</button>
+                <button class="btn btn-outline-primary">Cadastre-se</button>
             </div>
         </div>
     </header>
@@ -40,38 +45,43 @@
         </section>
         <section id="result">
             <div id="info">
-                <ul>
+                <ul data-aos="fade-right" data-aos-duration="2000">
                     <li>Envie uma senha via SMS, voz ou e-mail para autenticação do usuário.</li>
                     <li>Adicione uma camada extra de segurança além da senha pessoal.</li>
                     <li>Ofereça maior segurança para usuários.</li>
                 </ul>
-                <p>
+                <p data-aos="fade-down" data-aos-duration="2000">
                 Fortaleça a estratégia de segurança de seu negócio.
                 Adicionar um número de telefone de recuperação a uma  conta individual pode bloquear até:
                 <span>100%</span> dos bots automatizados,
                 <span>99%</span> dos ataques de phishing em massa,  e <span>66%</span> dos ataques direcionados.
-            </p>
-            </div>       
+                </p>
+                
+            </div> 
+            <div class="botoes">
+                <button data-aos="fade-up-right" data-aos-duration="1700" class="btn btn-primary">Faça um teste grátis</button>
+                <button data-aos="fade-up-right" data-aos-duration="1750" class="btn btn-success">Fale com um especialista</button>
+            </div>      
         </section>
         <section id="passos">
             
-            <h1 class="titulo">Como funciona</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1100">Como funciona</h1>
                 
             </div>
             <div class="passos-passos">
-                <div id="pc" class="for-pass">
+                <div id="pc" class="for-pass" data-aos="fade-down" data-aos-duration="1500">
                     <img  src="../imagens/laptop-novo-ref.png" alt="user-senha">
                     <p>Usuário acessa seu site o  aplicativo e digita a senha  cadastrada para entrar em  seu perfil ou completar uma  transação.</p>
                 </div>
-                <div id="alert" class="for-pass">
+                <div id="alert" class="for-pass" data-aos="fade-up" data-aos-duration="1500">
                     <img  src="../imagens/alert-novo-ref.png" alt="alert">
                     <p>A Telecall recebe a tentativa  de	login	e	solicita	que	o usuário insira seu número de  telefone para autorizar o  acesso.</p>
                 </div >
-                <div id="cell-number" class="for-pass">
+                <div id="cell-number" class="for-pass" data-aos="fade-down" data-aos-duration="1500">
                     <img  src="../imagens/cell-phone-novo-ref.png" alt="cell-number">
                     <p>Após inserir seu número, a  Telecall envia para o usuário  por SMS, chamada ou e-mail  um código PIN de uso único.</p>
                 </div>
-                <div id="pc" class="for-pass">
+                <div id="pc" class="for-pass" data-aos="fade-up" data-aos-duration="1500">
                     <img  src="../imagens/laptop2-novo-ref.png" alt="code">
                     <p>
                         O usuário insere o código no
@@ -82,36 +92,36 @@
         </section>            
         <section id="beneficios">
             
-            <h1 class="titulo">Benefícios 2FA</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1100">Benefícios 2FA</h1>
            
             <div class="conjunto-beneficos">
-                <div class="item-beneficios">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="1100">
                     <p class="pequeno">
                         Ofereça segurança aprimorada para seus clientes
                     </p>
                 </div>
-                <div class="item-beneficios">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="1500">
                     <p class="pequeno">
                         Reduza casos de fraude e invasões e evite o acesso a dados por invasores
                     </p>
                 </div>
-                <div class="item-beneficios">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="1900">
                     <p class="pequeno"> 
                         Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail
                     </p>
                 </div>
                
-                <div class="item-beneficios">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="2100">
                     <p class="pequeno">
                         API simples e de rápida implementação
                     </p>
                 </div>
-                <div class="item-beneficios">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="2500">
                     <p>
                         Flexibilidade de canais garante que o usuário conseguirá completar a tarefa desejada  mesmo quando tiver problema com um deles
                     </p>
                 </div>
-                <div class="item-beneficios">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="2900">
                     <p>
                         Plataforma intuitiva que permite visualizar relatórios de uso por dia, mês ou ano e
                         pesquisar usando diversos critérios de filtro
@@ -122,13 +132,13 @@
         </section>
         <section id="lista-usuario">
     
-            <h1 class="titulo">Usado em</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Usado em</h1>
             
-            <div class="container-usuarios">
+            <div data-aos="zoom-in" data-aos-duration="1600" class="container-usuarios">
                 <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCA2djE2aDIwdi0xNmgtMjB6bTEwIDEzYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzkgNSA1LTIuMjM5IDUtNSA1em0uMjkyLTIuMTE0di42MTRoLS41ODR2LS41ODJjLS42MDMtLjAxLTEuMjI5LS4xNTQtMS43NS0uNDI0bC4yNjYtLjk1OGMuNTU4LjIxNiAxLjMuNDQ1IDEuODgxLjMxNS42NzEtLjE1Mi44MDktLjg0Mi4wNjgtMS4xNzUtLjU0My0uMjUxLTIuMjA1LS40NjktMi4yMDUtMS44OTEgMC0uNzk1LjYwNS0xLjUwOCAxLjc0LTEuNjYzdi0uNjIyaC41ODR2LjU5M2MuNDIyLjAxMS44OTYuMDg1IDEuNDI2LjI0NmwtLjIxMi45NmMtLjQ0OC0uMTU2LS45NDMtLjMtMS40MjUtLjI3LS44NjguMDUxLS45NDYuODAzLS4zMzkgMS4xMTguOTk4LjQ2OSAyLjMwMS44MTggMi4zMDEgMi4wNjguMDAxIDEuMDAyLS43ODQgMS41MzctMS43NTEgMS42NzF6bTYuNzA4LTEyLjg4NmgtMTl2MTVoLTJ2LTE3aDIxdjJ6Ii8+PC9zdmc+">
                 <h1>Finanças</h1>
                 <ul>
-                    <li><i class="fa fa-check"></i>Acesso ao portal/app</li>
+                    <li>Acesso ao portal/app</li>
                     <li>Autenticação para transições bancárias</li>
                     <li>Pagamentos Online (PicPay, PayPal)</li>
                     <li>Digital Wallets  (Google  Pay, Apple Pay,  Samsung Pay)</li>                    
@@ -182,7 +192,7 @@
            </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer-2FA">
         <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
         <div class="redes">
             <a href="https://www.facebook.com/TelecallBr"><span>

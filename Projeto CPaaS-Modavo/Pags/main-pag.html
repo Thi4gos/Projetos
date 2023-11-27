@@ -12,25 +12,34 @@
     <script src="../AD+/AOS.js"></script>
     <link rel="icon" href="../imagens/icon_telecall.png">
 </head>
-<body>
+<body id="body">
     <header id="header">
         <a href="main-pag.html"><img src="../imagens/modavo_header.png" alt="telecall"></a>
 
         <div class="menu-bottons">
             <ul>
-                <li><a href="@">Produtos</a></li>
-                <li><a href="@">Tarifas</a></li>
-                <li><a href="@">CPaaS</a></li>
-                <li><a href="@">Central de Ajuda</a></li>
+                <li class="dropdown">
+                    <a href="#">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="2FA.html">Autenticação de dois fatores</a>
+                        <a href="GVC.html">Goggle chamadas verificadas</a>
+                        <a href="Num.html">Número máscara</a>
+                        <a href="SMS.html">SMS automático</a>
+                    </div>
+                </li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">CPaaS</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
             </ul>
-            <div class="divider"  onclick="contraste()">
-                <i id="botao_contraste" class="fa-solid fa-moon"></i>
-            </div>                         
+            <i id="botao_contraste" onclick="toggleContrast()" class="fa-solid fa-moon"></i>                                   
             <div class="div-dir">
                 <button class="btn btn-outline-primary">Login</button>
                 <button class="btn btn-outline-primary">Cadastre-se</button>
             </div>
         </div>
+        
+        </div>
+
     </header>
 
     <main id="corpo">
@@ -44,6 +53,10 @@
                 É um software de comunicação que atua  como uma base sobre a qual desenvolvedores podem  integrar uma variedade de aplicativos.
                 Métodos de comunicação típicos, como voz, chamadas  de vídeo ou mensagens de texto SMS, podem ser  incorporados em outros sistemas por meio de APIs que  se conectam à plataforma CPaaS.
                 </p>
+                <div class="botoes">
+                    <button data-aos="fade-up-right" data-aos-duration="1700" class="btn btn-primary">Faça um teste grátis</button>
+                    <button data-aos="fade-up-right" data-aos-duration="1750" class="btn btn-success">Fale com um especialista</button>
+                </div>
             </div>           
             <img data-aos="fade-left" data-aos-duration="1500" class="fora" src="../imagens/What-is-CPaaS.png" alt="CPaaS">
         </section>       

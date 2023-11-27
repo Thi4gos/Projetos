@@ -1,22 +1,15 @@
 document.getElementById('envio').addEventListener('click', function () {
-    const savedPass = localStorage.getItem('pass');
-    const inputLogin = document.getElementById('login').value;
-    const inputPass = document.getElementById('pass').value;
+    const savedPass = localStorage.getItem('passCad');
+    const savedLogin = localStorage.getItem('loginCad')
+    const inputLogin = document.getElementById('loginLogin').value;
+    const inputPass = document.getElementById('passLogin').value;
 
-    if (inputLogin == 'login' && inputPass == savedPass) {
+    if (inputLogin === savedLogin && inputPass === savedPass) {
         // Redirecionar apenas se as credenciais estiverem corretas
         window.location.href = 'main-pag.html';
-    } else {
+    }
+    if (inputLogin.value != savedLogin.valueOf && inputPass.value != savedPass.valueOf) {
         // Exibindo o alerta de erro
         document.getElementById('errorAlert').style.display = 'block';
     }
 });
-
-const savedLogin = localStorage.getItem('login');
-    const savedPass = localStorage.getItem('pass');
-
-    // Se houver dados salvos, preencha automaticamente os campos
-    if (savedLogin && savedPass) {
-        document.getElementById('login').value = savedLogin;
-        document.getElementById('pass').value = savedPass;
-    }

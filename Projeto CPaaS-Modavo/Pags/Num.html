@@ -16,17 +16,22 @@
 
         <div class="menu-bottons">
             <ul>
-                <li><a href="@">Produtos</a></li>
-                <li><a href="@">Tarifas</a></li>
-                <li><a href="@">CPaaS</a></li>
-                <li><a href="@">Central de Ajuda</a></li>
+                <li class="dropdown">
+                    <a href="#">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="2FA.html">Autenticação de dois fatores</a>
+                        <a href="GVC.html">Goggle chamadas verificadas</a>                       
+                        <a href="SMS.html">SMS automático</a>
+                    </div>
+                </li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">CPaaS</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
             </ul>
-            <div class="divider">
-                <i class="fa-solid fa-moon"></i>
-            </div>                         
+            <i id="botao_contraste" onclick="contraste()" class="fa-solid fa-moon"></i>                                   
             <div class="div-dir">
-                <button  class="btn btn-outline-primary">Login</button>
-                <button  class="btn btn-outline-primary">Cadastre-se</button>
+                <button class="btn btn-outline-primary">Login</button>
+                <button class="btn btn-outline-primary">Cadastre-se</button>
             </div>
         </div>
     </header>
@@ -40,23 +45,23 @@
         </section>
         <section id="result">
             <div id="info">
-                <ul>
+                <ul data-aos="fade-right" data-aos-duration="1500">
                     <li>Mascare um número de telefone para interações com mais
                         privacidade.
                         </li>
                     <li>Permite que empresas façam negócios usando menos  números de telefone.</li>
                     <li>Oferece uma experiência mais segura e profissional.</li>
                 </ul>
-                <p>
+                <p data-aos="fade-down" data-aos-duration="1500">
                     Garanta aos seus clientes a capacidade de fazer chamadas e enviar  mensagens sem expor seus números de telefone pessoais.
                 </p>
             </div>       
         </section>
         <section id="passos">
            
-            <h1 class="titulo">Como funciona</h1>               
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Como funciona</h1>               
             
-            <div class="passos-passos">                               
+            <div class="passos-passos" data-aos="zoom-in" data-aos-duration="1600">                               
                 <div class="passo-num">
                     <img class="imagem-num" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xNiAyMi42MjFsLTMuNTIxLTYuNzk1Yy0uMDA3LjAwNC0xLjk3NC45Ny0yLjA2NCAxLjAxMS0yLjI0IDEuMDg2LTYuNzk5LTcuODItNC42MDktOC45OTRsMi4wODItMS4wMjYtMy40OTItNi44MTctMi4xMDYgMS4wMzljLTEuNjIyLjg0NS0yLjI5OCAyLjYyNy0yLjI4OSA0Ljg0My4wMjcgNi45MDIgNi43MTEgMTguMDEzIDEyLjIxMiAxOC4xMTcuNTc1LjAxMSAxLjEzNy0uMDk4IDEuNjc3LS4zNDUuMTIxLS4wNTUgMi4xMDItMS4wMjkgMi4xMS0xLjAzM3ptNC01LjYyMWgtMXYtMTNoMXYxM3ptLTItMmgtMXYtOWgxdjl6bTQtMWgtMXYtN2gxdjd6bS02LTFoLTF2LTVoMXY1em0tMi0xaC0xdi0zaDF2M3ptMTAgMGgtMXYtM2gxdjN6bS0xMi0xaC0xdi0xaDF2MXoiLz48L3N2Zz4=">
                     <p>
@@ -78,72 +83,74 @@
             </div>
         </section>    
         <section id="outro-usuario">
-            <h1 class="titulo">Uso Pessoal</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Uso Pessoal</h1>
             <div class="descricao-uso">
                 <p>
-                    <span class="span-uso-seg">
+                    <span data-aos="fade-right" data-aos-duration="1100" class="span-uso-seg">
                         43% das empresas brasileiras adotou o Home  Office como padrão
                     </span>
-                    <span class="span-uso-seg">
+                    <span data-aos="fade-right" data-aos-duration="1500" class="span-uso-seg">
                         Mesmo após o fim da pandemia, estatísticas  indicam que o modelo de trabalho Home  Office deve crescer cerca de 30%
                     </span>
+                </p>
+                <p data-aos="fade-right" data-aos-duration="1900">
                     Funcionários que não possuem celular empresarial ou ramal  virtual podem se beneficiar do uso de um número máscara  permanente do trabalho vinculado ao seu telefone celular,  assim protegendo seus número pessoais
                 </p>
             </div>
         </section>
         <section id="recursos-avancados">
-            <h1 class="titulo">Recursos Avançados</h1>
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Recursos Avançados</h1>
             <div class="itens-avancados">
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1300">
                     <p class="p-avancado">SMS – Número máscara é totalmente funcional para chamadas de voz e SMS</p>
                 </div>
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1300">
                     <p class="p-avancado">Geo Match – Combine o código do país do número mascarado com o da chamada de origem  passando pro cliente a impressão de que vocês estão na mesma região</p>
                 </div>
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1300">
                     <p class="p-avancado">Gestão de Sessões – Habilite números máscara permanentes, bloqueie chamadas indesejadas,  validade de sessão e etc</p>
                 </div>
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1600">
                     <p class="p-avancado">Relatórios – Acesso direto do cliente à relatórios detalhados</p>
                 </div>
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1600">
                     <p class="p-avancado">Números Simultâneos - Use o mesmo número máscara em várias ligações simultâneas</p>
                 </div>
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1600">
                     <p class="p-avancado">Triagem de Conteúdo – Recurso SMS onde você pode sinalizar conteúdos sensíveis para proteger  dados do cliente</p>
                 </div>
-                <div class="item-avancado">
+                <div class="item-avancado" data-aos="zoom-in" data-aos-duration="1900">
                     <p class="p-avancado">Escalabilidade Ilimitada – compre e adicione números conforme necessário</p>
                 </div>
             </div>
         </section>
         <section id="lista-usuario-NUM">
     
-            <h1 class="titulo">Usado para</h1>
+            <h1 class="titulo" data-aos="fade-right" data-aos-duration="1200">Usado para</h1>
                 
             <div class="container-usuarios">
-               <div class="item-usuario">
+               <div class="item-usuario" data-aos="zoom-in" data-aos-duration="1200">
                 <img src="../imagens/apps-de-transporte.png" alt="">
                 <h1>Apps de transporte</h1>
                 <p>
                     Permite que motoristas de aplicativos se comuniquem com passageiros sem compartilhar seus números pessoais, garantindo a privacidade de ambos
                 </p>
                </div>
-               <div class="item-usuario">
+               <div class="item-usuario"  data-aos="zoom-in" data-aos-duration="1200">
                 <img class="dif" src="../imagens/app-de-relacionamento.png" alt="">
                 <h1>Apps de relacionamento</h1>
                 <p>
                     Usuários podem interagir de forma segura sem expor seus contatos pessoais
                 </p>
                 </div >
-               <div class="item-usuario">
+               <div class="item-usuario"  data-aos="zoom-in" data-aos-duration="1200">
                 <img class="dif" src="../imagens/mascara-logistica.png" alt="">
                 <h1>Entregas e Logística</h1>
                 <p>
                     Permite que cliente e entregador se comuniquem sem revelar seus números pessoais, garantindo a privacidade de ambos
                 </p>
                </div>
-               <div class="item-usuario">
+               <div class="item-usuario"  data-aos="zoom-in" data-aos-duration="1200">
                 <img src="../imagens/mascara-ecommerce.png" alt="">
                 <h1>E-comerce</h1>
                 <p>
@@ -154,7 +161,7 @@
            </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer-num">
         <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
         <div class="redes">
             <a href="https://www.facebook.com/TelecallBr"><span>

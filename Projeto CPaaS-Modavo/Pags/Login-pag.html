@@ -24,11 +24,11 @@
 
             <div class="data">
                 <label for="login">Login</label>
-                <input type="text" id="login" name="login" class="space">
+                <input type="text" id="loginLogin" name="login" class="space">
             </div>
             <div class="data">
                 <label for="pass">Senha</label>
-                <input type="password" id="pass" name="pass" class="space">
+                <input type="text" id="passLogin" name="pass" class="space">
             </div>
             <button type="button" class="btn btn-outline-primary" id="envio">Entrar</button>
         </form>
@@ -36,15 +36,5 @@
     <script src="../AD+/font icons java.js"></script>
     <script src="../AD+/boostrapscript-meu.js"></script>
     <script src="../AD+/loginScript.js"></script>
-    <script>
-        const savedLogin = localStorage.getItem('login');
-        const savedPass = localStorage.getItem('pass');
-
-        // Se houver dados salvos, preencha automaticamente os campos
-        if (savedLogin && savedPass) {
-            document.getElementById('login').value = savedLogin;
-            document.getElementById('pass').value = savedPass;
-        }
-    </script>
 </body>
 </html>
