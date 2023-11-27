@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../Styles/Style-Seg.css"> 
     <link rel="shortcut icon" href="../imagens/cadeado.png" type="image/x-icon">
 </head>
-<body> <!---->
-    <header>
+<body id="body"> <!---->
+    <header id="header">
         <a href="main-pag.html"><img src="../imagens/modavo_header.png" alt="telecall"></a>
 
         <div class="menu-bottons">
@@ -28,14 +28,14 @@
                 <li><a href="#">CPaaS</a></li>
                 <li><a href="#">Central de Ajuda</a></li>
             </ul>
-            <i id="botao_contraste" onclick="contraste()" class="fa-solid fa-moon"></i>                                   
+            <i id="botao_contraste" onclick="toggleContrast()" class="fa-solid fa-moon"></i>                                   
             <div class="div-dir">
-                <button class="btn btn-outline-primary">Login</button>
-                <button class="btn btn-outline-primary">Cadastre-se</button>
+                <a href="Login-pag.html"><button class="btn btn-outline-primary">Login</button></a>
+                <a href="Cad-form.html"><button class="btn btn-outline-primary">Cadastre-se</button></a>
             </div>
         </div>
     </header>
-    <main>
+    <main id="corpo">
         <section id="pr">
             
             <h1 id="tittle-pr" data-aos="fade-right" data-aos-duration="2700"  data-aos-offset="-400">

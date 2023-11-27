@@ -38,4 +38,3 @@ const iconElement = document.querySelector('.botao_contraste');
 if (iconElement) {
   iconElement.addEventListener('click', toggleContrast);
 }
-

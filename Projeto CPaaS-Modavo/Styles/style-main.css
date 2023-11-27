@@ -401,7 +401,7 @@ header ul li:hover::before {
   width: 730px;
   margin: 50px 0;
   font-size: 1.1em;
-  background-image: linear-gradient(-90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.353));
+  background-image: linear-gradient(-90deg, var(--cor300), var(--cor200));
 }
 .item-vantagem {
   padding: 50px 30px;
@@ -409,7 +409,7 @@ header ul li:hover::before {
   width: 730px;
   margin: 50px 0;
   font-size: 1.1em;
-  background-image: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.353));
+  background-image: linear-gradient(90deg, var(--cor300), var(--cor200));
 }
 .item-transformacao p {
   margin: auto;

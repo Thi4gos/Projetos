@@ -131,10 +131,11 @@
     background-color: #ddd;
   }                                      
                                         /* Parte do ícone */
-i {
+#botao_contraste {
+    cursor: pointer;
     position: relative;
-    }
-    i::after {
+}
+#botao_contraste::after {
     content: "";
     display: block;
     position: absolute;
@@ -143,7 +144,7 @@ i {
     right: 23px;
     bottom: -3px;
     background-color: #000000;
-    }
+}
                                         /* Parte dos botões */
   .div-dir {
       padding-left: 20px;
