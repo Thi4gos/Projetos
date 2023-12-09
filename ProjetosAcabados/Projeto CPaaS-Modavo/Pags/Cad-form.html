@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modavo Inc.</title>  
+    <link rel="stylesheet" href="../Styles/style-Cad.css">
+    <link rel="stylesheet" href="../AD+/boostrap-meu.css"> 
+    <link rel="icon" href="../imagens/icon_telecall.png"> 
+</head>
+<body>
+    
+
+    <main>       
+            <form action="local-storage" method="get">
+                <h1 class="titulo">Cadastro</h1>
+                <div class="alert-container">
+                    <div class="alert">
+                        <p class="alert alert-danger" role="alert" id="alert">Insira os dados para cadastro</p>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="nome"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" name="nome" id="nome"  minlength="15" maxlength="60" placeholder="Nome" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="login"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="email" name="login" id="login" placeholder="E-mail" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="data-nasc"><i class="fa-solid fa-calendar"></i></label>
+                    <input type="date" name="data-nasc" id="data_nasc" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sex"><i class="fa-solid fa-venus-mars"></i></label>
+                    <select name="sex" id="sexo" class="custom custom-select" required>
+                        <option value="none">Escolha o sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="nome_mae">Nome da mãe</label>
+                    <input type="text" name="nome_mae" id="nome_materno" required placeholder="">
+                </div>
+
+                <div class="campo">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tel_cel">Telefone celular</label>
+                    <input type="tel" name="tel_cel" id="tel">
+                </div>
+
+                <div class="campo">
+                    <label for="tel-fix">Telefone fixo</label>
+                    <input type="tel" name="tel_fix" id="tel_fix">
+                </div>
+
+                <div class="campo">
+                    <label for="adress">Endereço</label>
+                    <input type="text" name="adress" id="adress">
+                </div>
+
+                <div class="campo">
+                    <label for="pass"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" name="pass" id="pass" placeholder="Senha">
+                </div>
+
+                <div class="campo">
+                    <label for="pass-conf"><i class="fa-sharp fa-solid fa-lock"></i></label>
+                    <input type="password" name="pass-conf" id="pass_conf" placeholder="Confirmar senha">
+                </div>
+                
+                <div class="button-container">
+                    <a href="Login-pag.html"><button class="btn btn-primary" id="button" >Cadastro</button></a>
+                </div>      
+            </form>     
+    </main>
+    <script src="../AD+/font icons java.js"></script>
+    <script src="../AD+/boostrapscript-meu.js"></script>
+    <script src="../AD+/cadastroScript.js"></script>
+</body>
+</html>

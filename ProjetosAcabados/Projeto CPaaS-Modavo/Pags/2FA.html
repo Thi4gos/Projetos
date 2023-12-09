@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Solução 2FA</title>
+    <link rel="stylesheet" href="../AD+/aos.css">   
+    <link rel="stylesheet" src="../AD+/font icons style.css">   
+    <link rel="stylesheet" href="../AD+/boostrap-meu.css">
+    <link rel="stylesheet" href="../Styles/Style-Seg.css"> 
+    <link rel="shortcut icon" href="../imagens/cadeado.png" type="image/x-icon">
+</head>
+<body id="body"> <!---->
+    <header id="header">
+        <a href="main-pag.html"><img src="../imagens/modavo_header.png" alt="telecall"></a>
+
+        <div class="menu-bottons">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="GVC.html">Goggle chamadas verificadas</a>
+                        <a href="Num.html">Número máscara</a>
+                        <a href="SMS.html">SMS automático</a>
+                    </div>
+                </li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">CPaaS</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
+            </ul>
+            <i id="botao_contraste" onclick="toggleContrast()" class="fa-solid fa-moon"></i>                                   
+            <div class="div-dir">
+                <a href="Login-pag.html"><button class="btn btn-outline-primary">Login</button></a>
+                <a href="Cad-form.html"><button class="btn btn-outline-primary">Cadastre-se</button></a>
+            </div>
+        </div>
+    </header>
+    <main id="corpo">
+        <section id="pr">
+            
+            <h1 id="tittle-pr" data-aos="fade-right" data-aos-duration="2700"  data-aos-offset="-400">
+                2FA - Autenticação de dois fatores
+            </h1>               
+                     
+        </section>
+        <section id="result">
+            <div id="info">
+                <ul data-aos="fade-right" data-aos-duration="2000">
+                    <li>Envie uma senha via SMS, voz ou e-mail para autenticação do usuário.</li>
+                    <li>Adicione uma camada extra de segurança além da senha pessoal.</li>
+                    <li>Ofereça maior segurança para usuários.</li>
+                </ul>
+                <p data-aos="fade-down" data-aos-duration="2000">
+                Fortaleça a estratégia de segurança de seu negócio.
+                Adicionar um número de telefone de recuperação a uma  conta individual pode bloquear até:
+                <span>100%</span> dos bots automatizados,
+                <span>99%</span> dos ataques de phishing em massa,  e <span>66%</span> dos ataques direcionados.
+                </p>
+                
+            </div> 
+            <div class="botoes">
+                <button data-aos="fade-up-right" data-aos-duration="1700" class="btn btn-primary">Faça um teste grátis</button>
+                <button data-aos="fade-up-right" data-aos-duration="1750" class="btn btn-success">Fale com um especialista</button>
+            </div>      
+        </section>
+        <section id="passos">
+            
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1100">Como funciona</h1>
+                
+            </div>
+            <div class="passos-passos">
+                <div id="pc" class="for-pass" data-aos="fade-down" data-aos-duration="1500">
+                    <img  src="../imagens/laptop-novo-ref.png" alt="user-senha">
+                    <p>Usuário acessa seu site o  aplicativo e digita a senha  cadastrada para entrar em  seu perfil ou completar uma  transação.</p>
+                </div>
+                <div id="alert" class="for-pass" data-aos="fade-up" data-aos-duration="1500">
+                    <img  src="../imagens/alert-novo-ref.png" alt="alert">
+                    <p>A Telecall recebe a tentativa  de	login	e	solicita	que	o usuário insira seu número de  telefone para autorizar o  acesso.</p>
+                </div >
+                <div id="cell-number" class="for-pass" data-aos="fade-down" data-aos-duration="1500">
+                    <img  src="../imagens/cell-phone-novo-ref.png" alt="cell-number">
+                    <p>Após inserir seu número, a  Telecall envia para o usuário  por SMS, chamada ou e-mail  um código PIN de uso único.</p>
+                </div>
+                <div id="pc" class="for-pass" data-aos="fade-up" data-aos-duration="1500">
+                    <img  src="../imagens/laptop2-novo-ref.png" alt="code">
+                    <p>
+                        O usuário insere o código no
+                        site ou aplicativo para  concluir o processo de  verificação.
+                    </p>
+                </div>
+            </div>
+        </section>            
+        <section id="beneficios">
+            
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1100">Benefícios 2FA</h1>
+           
+            <div class="conjunto-beneficos">
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="1100">
+                    <p class="pequeno">
+                        Ofereça segurança aprimorada para seus clientes
+                    </p>
+                </div>
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="1500">
+                    <p class="pequeno">
+                        Reduza casos de fraude e invasões e evite o acesso a dados por invasores
+                    </p>
+                </div>
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="1900">
+                    <p class="pequeno"> 
+                        Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail
+                    </p>
+                </div>
+               
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="2100">
+                    <p class="pequeno">
+                        API simples e de rápida implementação
+                    </p>
+                </div>
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="2500">
+                    <p>
+                        Flexibilidade de canais garante que o usuário conseguirá completar a tarefa desejada  mesmo quando tiver problema com um deles
+                    </p>
+                </div>
+                <div class="item-beneficios" data-aos="zoom-in" data-aos-duration="2900">
+                    <p>
+                        Plataforma intuitiva que permite visualizar relatórios de uso por dia, mês ou ano e
+                        pesquisar usando diversos critérios de filtro
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <section id="lista-usuario">
+    
+            <h1 class="titulo" data-aos="zoom-in" data-aos-duration="1200">Usado em</h1>
+            
+            <div data-aos="zoom-in" data-aos-duration="1600" class="container-usuarios">
+                <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCA2djE2aDIwdi0xNmgtMjB6bTEwIDEzYy0yLjc2MSAwLTUtMi4yMzktNS01czIuMjM5LTUgNS01IDUgMi4yMzkgNSA1LTIuMjM5IDUtNSA1em0uMjkyLTIuMTE0di42MTRoLS41ODR2LS41ODJjLS42MDMtLjAxLTEuMjI5LS4xNTQtMS43NS0uNDI0bC4yNjYtLjk1OGMuNTU4LjIxNiAxLjMuNDQ1IDEuODgxLjMxNS42NzEtLjE1Mi44MDktLjg0Mi4wNjgtMS4xNzUtLjU0My0uMjUxLTIuMjA1LS40NjktMi4yMDUtMS44OTEgMC0uNzk1LjYwNS0xLjUwOCAxLjc0LTEuNjYzdi0uNjIyaC41ODR2LjU5M2MuNDIyLjAxMS44OTYuMDg1IDEuNDI2LjI0NmwtLjIxMi45NmMtLjQ0OC0uMTU2LS45NDMtLjMtMS40MjUtLjI3LS44NjguMDUxLS45NDYuODAzLS4zMzkgMS4xMTguOTk4LjQ2OSAyLjMwMS44MTggMi4zMDEgMi4wNjguMDAxIDEuMDAyLS43ODQgMS41MzctMS43NTEgMS42NzF6bTYuNzA4LTEyLjg4NmgtMTl2MTVoLTJ2LTE3aDIxdjJ6Ii8+PC9zdmc+">
+                <h1>Finanças</h1>
+                <ul>
+                    <li>Acesso ao portal/app</li>
+                    <li>Autenticação para transições bancárias</li>
+                    <li>Pagamentos Online (PicPay, PayPal)</li>
+                    <li>Digital Wallets  (Google  Pay, Apple Pay,  Samsung Pay)</li>                    
+                </ul>
+
+                </div>
+                <div><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMC45OTkgNC40NDJ2LS43MWMtLjU5OC0uMzQ2LTEtLjk5Mi0xLTEuNzMyIDAtMS4xMDQuODk2LTIgMi0yczIgLjg5NiAyIDJjMCAuNzQtLjQwMiAxLjM4Ni0xIDEuNzMydi43MWMuMTQ0LS4wMjMuMjY4LS4wNTMuMzYtLjA4OSAxLjIwNi0uNDU5IDEuODcyLTIuMjg2IDMuOTQ4LTIuMzUzIDIuMjEtLjAyOSAzLjQxOCAyLjI1MSA1LjE3MyAyLjc2OS40NzMuMTM5IDEuMDI3LjE0MiAxLjUyLjE3Mi0uNjM1IDQuMTA4LTYuNTkzIDUuODcyLTExLjAwMSA0LjcyNXY2LjkyM2MuODQzLjI2MiAxLjkxMS42MTEgMi41NDIgMS4yMDEgMi4wMDggMS44NzcuODMgNC42OTgtMS41MzkgNC43ODd2LTFjMS4yNjYtLjYyNyAxLjUwNC0xLjk2MS0xLjAwMy0yLjg3OHY0LjMwMWMwIC41NTMtLjQ0OCAxLTEgMXMtMS0uNDQ3LTEtMXYtNC44OTZjLTEuOTU1LS41MS01LjM2NC0xLjE3LTUuMzM5LTQuMDAzLjAxOC0xLjY5NiAxLjU1LTMuMTAxIDMuMzMxLTMuMTAxaC4wMWMuNTUzIDAgMSAuNDQ4IDEgMSAwIC41NDktLjQ0Mi45OTQtLjk4OSAxLS44MzYuMDA5LTEuMzkyLjY1MS0xLjM0OSAxLjE5Mi4wOTggMS4xMjQgMi4yMiAxLjU1NiAzLjMzNiAxLjg0NHYtNi4zNjljLTQuNDA3IDEuMTQ2LTEwLjM2NC0uNjE5LTEwLjk5OS00LjcyNi40OTMtLjAzIDEuMDQ3LS4wMzMgMS41Mi0uMTcyIDEuNzU1LS41MTggMi45NjMtMi43OTggNS4xNzMtMi43NjkgMi4wNzYuMDY3IDIuNzQyIDEuODk0IDMuOTQ4IDIuMzUzLjA5Mi4wMzYuMjE1LjA2NS4zNTguMDg5em0tMy4wMzkgMTMuOTIzYy44NjMuMjUgMS42NTUuNDYzIDIuMzUuNjI0LTEuNjkxLjg2OS0xLjQ5NSAyLjAwMi0uMzExIDIuNTg4djFjLTIuMTM4LS4wOC0zLjMwNS0yLjM4NC0yLjAzOS00LjIxMnptNi4wNzMtMi42MDZjLjg4OS0uMjU3IDIuMjMyLS42NDQgMi4zMDUtMS41NjcuMDQzLS41NDMtLjUxNi0xLjE4My0xLjM1LTEuMTkyLS41NDctLjAwNi0uOTg5LS40NTEtLjk4OS0xIDAtLjU1Mi40NDgtMSAxLTFoLjAxMWMxLjc3MiAwIDMuMzEzIDEuMzk5IDMuMzMgMy4xMDEuMDE3IDEuMjczLS44NTEgMi4zNjctMS45ODYgMi45MzQtLjYtLjUwNS0xLjM5Ny0uOTA5LTIuMzIxLTEuMjc2em01Ljc3My04LjY0N2MuNTEyLS4yNC45NjEtLjUzNCAxLjMwOC0uODg2LTEuNDA2LS4zODYtMi41NzMtMi4yMTgtMy43NjctMi4yMjctMS4yNDEuMDQtMi4wMzQgMi4zNTMtNC4zNDcgMi40NjF2MS4xOTNjLjYwNS4yMiAxLjUyNy4zMzYgMi41NTEuMzIzLS4xMjQtLjQ4NC0uMTc3LTEuMDAzLS4xODYtMS42MDUuNDEzLjYxMS45NTUgMS4xMjkgMS41MjMgMS41MTYuNDc4LS4wNTcuOTU4LS4xNDIgMS40MjItLjI1Ny0uMzk0LS41ODctLjYtMS4yMDMtLjcyOS0xLjg3OS42NDUuNjYgMS40MTMgMS4wNjggMi4yMjUgMS4zNjF6bS04LjgwNy0uNjUyYy0yLjMxMi0uMTA4LTMuMTA2LTIuNDIxLTQuMzQ2LTIuNDYxLTEuMTk0LjAwOS0yLjM2MSAxLjg0MS0zLjc2NyAyLjIyNy4zNDcuMzUyLjc5Ni42NDYgMS4zMDguODg2LjgxMi0uMjkzIDEuNTgtLjcwMSAyLjIyNS0xLjM2MS0uMTI5LjY3Ni0uMzM1IDEuMjkyLS43MjkgMS44NzkuNDY0LjExNS45NDQuMiAxLjQyMi4yNTcuNTY4LS4zODcgMS4xMS0uOTA1IDEuNTIzLTEuNTE2LS4wMDkuNjAyLS4wNjIgMS4xMjEtLjE4NiAxLjYwNSAxLjAyMy4wMTMgMS45NDUtLjEwMyAyLjU1LS4zMjJ2LTEuMTk0eiIvPjwvc3ZnPg==">
+                <h1>Saúde</h1>
+                <ul>
+                    <li>Acesso ao portal/app</li>
+                    <li>Agentadamentos </li>
+                    <li>Tokens de  autorização</li>
+                    <li>Telemedicina</li>
+                </ul>
+
+                </div>
+                <div><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMiAwYy01LjUyMiAwLTEwIDQuMzk0LTEwIDkuODE1IDAgNS41MDUgNC4zNzUgOS4yNjggMTAgMTQuMTg1IDUuNjI1LTQuOTE3IDEwLTguNjggMTAtMTQuMTg1IDAtNS40MjEtNC40NzgtOS44MTUtMTAtOS44MTV6bTAgMThjLTQuNDE5IDAtOC0zLjU4Mi04LThzMy41ODEtOCA4LThjNC40MTkgMCA4IDMuNTgyIDggOHMtMy41ODEgOC04IDh6bS0zLjYxLTcuMjAybDIuODMxLTEuNDAyLTIuOTAyLTIuNDc1Ljg5OC0uNDQ0IDQuNjk3IDEuNTg2IDIuMjQ0LTEuMTExYy41OTItLjI5NyAxLjU2OS0uMjE3IDEuNzkxLjIzMS4wMzUuMDcxLjA1MS4xNTIuMDUxLjIzOS0uMDAyLjQ1OC0uNDYgMS4wNzgtLjk1MyAxLjMyNWwtMi4yNDQgMS4xMTEtMS41ODYgNC42OTgtLjg5OC40NDQtLjIwOS0zLjgwOC0yLjgzMiAxLjQwMS0uNTg0IDEuNDA4LS42MjguMzEtLjIxOS0yLjEyNi0xLjU1OS0xLjQ2NC42MjgtLjMxMSAxLjQ3NC4zODh6Ii8+PC9zdmc+">
+                <h1>Turismo</h1>
+                <ul>
+                    <li>Acesso ao portal/app</li>
+                    <li>Gestão de Reservas</li>
+                    <li>Acesso ao histórico</li>
+                    <li>Salvar dados de  pagamentos</li>
+                    <li>Recuperação de Senha</li>                                              
+                </ul>
+
+                </div>
+                <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMTkuNWMwIC44MjktLjY3MiAxLjUtMS41IDEuNXMtMS41LS42NzEtMS41LTEuNWMwLS44MjguNjcyLTEuNSAxLjUtMS41czEuNS42NzIgMS41IDEuNXptMy41LTEuNWMtLjgyOCAwLTEuNS42NzEtMS41IDEuNXMuNjcyIDEuNSAxLjUgMS41IDEuNS0uNjcxIDEuNS0xLjVjMC0uODI4LS42NzItMS41LTEuNS0xLjV6bTEuMzM2LTVsMS45NzctN2gtMTYuODEzbDIuOTM4IDdoMTEuODk4em00Ljk2OS0xMGwtMy40MzIgMTJoLTEyLjU5N2wuODM5IDJoMTMuMjM5bDMuNDc0LTEyaDEuOTI5bC43NDMtMmgtNC4xOTV6Ii8+PC9zdmc+">
+                <h1>Varejo</h1>
+                <ul>
+                    <li>Acesso ao portal/app</li>
+                    <li>Salvar dados de  pagamentos</li>
+                    <li>Acesso ao  histórico</li>
+                    <li>Recuperação de Senha</li>                                        
+                    <li>Recibo Eletrônico</li>
+                </ul>
+
+                </div>
+
+                <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xIDI0aC0xdi0yaC45OThsLjAxNC05aDMuOTg4di0zaDJ2M2gydi0zaDJ2M2gydi0zaDJ2M2gydi0zaDJ2M2g0djloMXYyaC0yM3ptMjAtN2gtMTh2NWgydi0zYzAtLjU1Mi40NDgtMSAxLTFzMSAuNDQ4IDEgMXYzaDJ2LTNjMC0uNTUyLjQ0OC0xIDEtMXMxIC40NDggMSAxdjNoMnYtM2MwLS41NTIuNDQ4LTEgMS0xczEgLjQ0OCAxIDF2M2gydi0zYzAtLjU1Mi40NDgtMSAxLTFzMSAuNDQ4IDEgMXYzaDJ2LTV6bS02LTE1aC0zdjFjMi45NjYgMCA2LjE1OCAxLjk3OSA3IDZoLTE0Yy41NDctMy43OCAzLjYzOC01LjgyNyA2LTZ2LTNoNHYyeiIvPjwvc3ZnPg==">
+                <h1>Governo</h1>
+                <ul>
+                    <li>Acesso ao portal/app</li>
+                    <li>Gestão de  informações  Agendamentos</li>
+                    <li>Recuperação de Senha</li>
+                    
+                </ul>
+
+                </div>
+           </div>
+        </section>
+    </main>
+    <footer id="footer-2FA">
+        <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/TelecallBr"><span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" class="cor-muda-svg" /></svg>
+            </span>
+            </a>
+            <a href="https://www.instagram.com/telecallbr/"><span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z" class="cor-muda-svg" /></svg>
+            </span>           
+            </a>
+            <a href="https://www.linkedin.com/company/telecall/"><span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" class="cor-muda-svg"/></svg>
+            </a>
+        </div>
+    </footer>
+    <script src="../AD+/script.js"></script>
+    <script src="../AD+/Jquery.js"></script>
+    <script src="../AD+/popperJS.js"></script>
+    <script src="../AD+/boostrapscript-meu.js" ></script>
+    <script src="../AD+/font icons java.js"></script>
+    <script src="../Styles/aos-master/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
