@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* Função para usar outro arquivo */
+/* 'varials valores' */
+* {
+  color: gray;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: 100dvh;
+  height: 100vh;
+  background: #124968;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  background: #BEE6F9;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header a:hover {
+  text-decoration: none;
+  color: #85D1F4;
+}
+.header-logo {
+  width: auto;
+  height: auto;
+}
+.header-list {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  margin: auto 0;
+}
+.header-list ul {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: bold;
+}
+.header-list ul li {
+  margin: 0 10px;
+}
+.header-list ul li:hover {
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+.header-list .dropdown-content {
+  display: none;
+}
+.header-buttons {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

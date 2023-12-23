@@ -1,0 +1,60 @@
+/* Função para usar outro arquivo */
+/* 'varials valores' */
+@use 'varials' 
+@use 'mixins' 
+
+*
+    color: gray
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Raleway', sans-serif
+    
+
+body
+    height: 100dvh
+    height: 100vh
+    
+    background: varials.$cor900
+
+.header
+    @include mixins.flex-center
+    padding: 20px
+    width: 100%
+    height: auto
+    background: varials.$cor200
+
+    a
+        text-decoration: none
+        color: black
+
+        &:hover
+            text-decoration: none
+            color: varials.$cor300
+            
+
+    &-logo
+        width: auto
+        height: auto
+    
+    &-list
+        @include mixins.flex-center
+        font-size: 1.2em
+        margin: auto 0
+        ul
+            @include mixins.flex-center-space
+            list-style: none
+            font-weight: bold
+            li
+                margin: 0 10px
+                &:hover
+                    border-bottom: 2px solid black
+                    transition: .3s 
+
+        .dropdown-content
+            display: none
+    &-buttons
+        @include mixins.flex-center
+        height: auto
+        
+        
