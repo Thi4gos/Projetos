@@ -4,25 +4,16 @@
 @use 'mixins' 
 
 *
-    color: gray
+    color: rgb(70, 70, 70)
     padding: 0
     margin: 0
     box-sizing: border-box
     font-family: 'Raleway', sans-serif
     
-
 body
     height: 100dvh
-    height: 100vh
-    
-    background: varials.$cor900
-
-.header
-    @include mixins.flex-center
-    padding: 20px
-    width: 100%
-    height: auto
-    background: varials.$cor200
+    height: 100vh  
+    background: rgb(255, 255, 255)
 
     a
         text-decoration: none
@@ -30,31 +21,74 @@ body
 
         &:hover
             text-decoration: none
-            color: varials.$cor300
-            
+            color: varials.$cor600
+    
+    ul
+        list-style: none
+
+.header   
+    padding: 20px
+    width: 100%
+    height: 80px
+    background-color: white
+    opacity: 0
+    @include mixins.flex-row-center-between
+    
+    &-nav
+        @include mixins.flex-row-center-between /* incluindo configuração da pasta 'mixins' */
+        
+    &-nav-buttons
+        width: 250px
+        height: 50px
+        column-gap: 20px
+        @include mixins.flex-row-center-center
+
+    &-nav-list
+        width: 500px
+        height: 19px 
+        padding: 0
+        margin: 0  
+        font-weight: bold     
+        @include mixins.flex-row-center-spacearound
+
+        &-dropdown
+            &-content
+                display: none
+                &:hover
+                    display: flex
+                    flex-direction: column
+
+    &-nav-icon
+        margin: 0 10px
+        svg
+            width: 20px
+        path
+            cursor: pointer
+            fill: varials.$cor600                
 
     &-logo
         width: auto
         height: auto
-    
-    &-list
-        @include mixins.flex-center
-        font-size: 1.2em
-        margin: auto 0
-        ul
-            @include mixins.flex-center-space
-            list-style: none
-            font-weight: bold
-            li
-                margin: 0 10px
-                &:hover
-                    border-bottom: 2px solid black
-                    transition: .3s 
 
-        .dropdown-content
-            display: none
-    &-buttons
-        @include mixins.flex-center
-        height: auto
+        img
+            width: 80%
+            height: auto
+    
+    &-nav-list     
+        font-size: 1.2em                                       
+
+                                                             /* PARTE DO CORPO */
         
+.CPaaS
+    margin: 200px 0
+    height: 1000px
+    width: 100%        
         
+.CPaaS-top
+    padding: 80px 50px 0 50px
+    margin: -80px 0 200px 0
+    background-image: radial-gradient(ellipse, gray, blue)
+    background-position: bottom center
+    background-size: 100%
+    background-repeat: no-repeat 
+

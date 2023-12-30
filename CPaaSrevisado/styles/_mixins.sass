@@ -1,11 +1,25 @@
 
     
-@mixin flex-center-space
+@mixin flex-row-center-spacearound
     display: flex
-    align-content: center
-    justify-content: space-between
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
 
-@mixin flex-center
+@mixin flex-row-center-between
     display: flex
-    align-content: center
+    flex-direction: row
+    align-items: center
     justify-content: space-between
+    
+@mixin flex-row-center-center
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row    
+
+@mixin flex-colunm-center-center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: start
