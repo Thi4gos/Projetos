@@ -30,10 +30,12 @@ body
     padding: 20px
     width: 100%
     height: 80px
-    background-color: white
-    opacity: 0
+    background-color: transparent
+    
     @include mixins.flex-row-center-between
     
+    
+
     &-nav
         @include mixins.flex-row-center-between /* incluindo configuração da pasta 'mixins' */
         
@@ -78,17 +80,115 @@ body
         font-size: 1.2em                                       
 
                                                              /* PARTE DO CORPO */
+                                                             /* PRIMEIRA PARTE */
         
 .CPaaS
-    margin: 200px 0
-    height: 1000px
-    width: 100%        
+    margin: auto
+    height: 1100px
+    width: 80%        
         
 .CPaaS-top
-    padding: 80px 50px 0 50px
-    margin: -80px 0 200px 0
-    background-image: radial-gradient(ellipse, gray, blue)
-    background-position: bottom center
-    background-size: 100%
-    background-repeat: no-repeat 
+    @include mixins.flex-colunm-start-center-wrap 
+     
+    &-principal
+        @include mixins.flex-column-center-center
+        margin: 50px 0 0  0
+        padding: 50px 0 0 0
+        height: 500px
+        width: 500px
+
+        &-titulo
+            position: relative
+            &::after
+                @include mixins.baseTitulo
+        
+        img
+            display: block
+            width: 360px
+            height: auto          
+
+    &-div-down
+        @include mixins.flex-column-center-center
+        margin: 50px 0 0 0
+        width: 700px
+        height: 500px
+
+        &-desc
+            font-weight: bold
+            font-size: 1.3em
+
+            &-btn
+                padding: 20px
+
+                button
+                    margin: 0 10px
+
+    &-img
+        margin: 50px 0 0 0
+        height: 500px
+        width: 500px
+
+        img
+            width: 650px
+            height: auto      
+
+                                                    /* SEGUNDA PARTE */
+
+.CPaaS-solucao
+    @include mixins.flex-column-center-center
+    row-gap: 30px
+
+
+    &-titulo
+        @include mixins.flex-column-center-center
+
+        h1
+            font-weight: bold
+            position: relative
+
+            &::after
+                @include mixins.baseTitulo
+
+    &-solucoes
+        padding: 8px
+        margin: 10px
+        border: 3px solid black
+        border-bottom: 6px solid black
+        border-radius: 12px
+        border-color: gray
+
+    &-detalhe
+        font-size: 1.3em
+        width: 600px
+        text-align: center    
+        color: #2AACE4
+                                                             /* TERCEIRA PARTE */
+
+.CPaaS-listas
+    @include mixins.flex-row-start-center
+
+
+
+
+
+
+
+footer 
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  border-top: 2px solid #7676767e
+  width: 100%
+  height: 100px
+
+.redes 
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 20px
+  width: 100px
+
+.cor-muda-svg:hover 
+  fill: #2AACE4
 

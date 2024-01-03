@@ -1,4 +1,11 @@
-
+@mixin baseTitulo
+    content: ""
+    position: absolute
+    top: 50px
+    right: 0
+    width: 100%
+    height: 2px
+    background-color: #2AACE4
     
 @mixin flex-row-center-spacearound
     display: flex
@@ -18,8 +25,27 @@
     align-items: center
     flex-direction: row    
 
-@mixin flex-colunm-center-center
+@mixin flex-column-center-center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+@mixin flex-column-center-start
     display: flex
     flex-direction: column
     align-items: center
     justify-content: start
+
+@mixin flex-row-start-center  
+    display: flex
+    flex-direction: row
+    align-items: start
+    justify-content: center
+
+@mixin flex-colunm-start-center-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
