@@ -6,6 +6,7 @@
     width: 100%
     height: 2px
     background-color: #2AACE4
+    @content
     
 @mixin flex-row-center-spacearound
     display: flex
@@ -23,7 +24,8 @@
     display: flex
     justify-content: center
     align-items: center
-    flex-direction: row    
+    flex-direction: row  
+    @content  
 
 @mixin flex-column-center-center
     display: flex

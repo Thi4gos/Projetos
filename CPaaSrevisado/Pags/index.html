@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <meta name="description" content="Transforme sua comunicação empresarial com a solução CPaaS Modavo. Integre SMS, autenticação de dois fatores, números máscara, transcrição de áudio e muito mais.">
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../node_modules/fontawesome/css/all.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="../img/icon_telecall.png" type="image/x-icon">
     <title>Revisão</title>
   </head>
   <body id="body">
@@ -35,10 +33,10 @@
           <li><a href="#">CPaaS</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Central de Ajuda</a></li>
-        </ul> 
-        <button class="contrast-toggle">
-          <span>Toggle contrast</span>
-        </button>
+        </ul>
+        <div class="header-nav-list-toggle" id="toggle">
+          <i class="fa-solid fa-moon"></i>
+        </div>
         <div class="header-nav-buttons">
           <a href=""><button type="button"  class="btn btn-outline-primary">Entrar</button></a>
           <a href=""><button type="button"  class="btn btn-outline-primary">Cadastrar</button></a>     
@@ -75,7 +73,7 @@
         <article class="container">
           <div class="row">
             <div class="col CPaaS-solucao-solucoes">
-              <a href="2FA.html">
+              <a href="solucao-pags/2FA.html">
                 <div>
                   <h1 class="CPaaS-solucoes-solucoes-titulo">
                     2FA
@@ -149,79 +147,74 @@
       </section>
 
       <section class="CPaaS CPaaS-usuarios">
-        <h1 class="titulo-utilidades">Utilidades do CPaaS</h1>
-        <div class="container-usos">
-            <div class="item-uso">
-                <div>
-                    <img class="img-item-usos" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMyA2LjA2NnYxMi4wNjVsLTExLjAwMSA1Ljg2OS0xMS01Ljg2OXYtMTIuMTMxbDExLTYgMTEuMDAxIDYuMDY2em0tMjEuMDAxIDExLjQ2NWw5LjUgNS4wNjl2LTEwLjU3bC05LjUtNC45NDZ2MTAuNDQ3em0yMC4wMDEtMTAuMzg4bC05LjUwMSA0Ljg4OXYxMC41NjhsOS41MDEtNS4wNjl2LTEwLjM4OHptLTUuNTIgMS43MTZsLTkuNTM0LTQuOTY0LTQuMzQ5IDIuMzczIDkuNDA0IDQuODk2IDQuNDc5LTIuMzA1em0tOC40NzYtNS41NDFsOS41NjUgNC45OCAzLjgzMi0xLjk3Mi05LjQwNS01LjE4NS0zLjk5MiAyLjE3N3oiLz48L3N2Zz4=">
-                </div>
-                <ul>
-                    <li>Acesso seguro com 2FA.</li>
-                    <li>Uso de números mascarados  para proteção de funcionário  e cliente.</li>
-                    <li>Mantenha o cliente  informado sobre entrega e  serviços.</li>
-                    <li>Verified calling para  confirmação de entregas.</li>
-                </ul>
-            </div>
-            <div class="item-uso">
-                <div>
-                    <img class="img-item-usos" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTMuMjk5IDMuNzRjLS4yMDctLjIwNi0uMjk5LS40NjEtLjI5OS0uNzExIDAtLjUyNC40MDctMS4wMjkgMS4wMi0xLjAyOS4yNjIgMCAuNTIyLjEuNzIxLjI5OGwzLjc4MyAzLjc4M2MtLjc3MS4xMTctMS41LjM2My0yLjE1OC43MjZsLTMuMDY3LTMuMDY3em0zLjkyIDE0Ljg0bC0uNTcxIDEuNDJoLTkuMjk2bC0zLjU5Ny04Ljk2MS0uMDE2LS4wMzloOS40NDFjLjE3MS0uNzIxLjQ2LTEuMzk1Ljg0OC0yaC0xNC4wMjh2MmguNjQzYy41MzUgMCAxLjAyMS4zMDQgMS4yNTYuNzg0bDQuMTAxIDEwLjIxNmgxMmwxLjIxMS0zLjAxNWMtLjY5OS0uMDMtMS4zNjgtLjE3MS0xLjk5Mi0uNDA1em0tNi41MTgtMTQuODRjLjIwNy0uMjA2LjI5OS0uNDYxLjI5OS0uNzExIDAtLjUyNC0uNDA3LTEuMDI5LTEuMDItMS4wMjktLjI2MSAwLS41MjIuMS0uNzIuMjk4bC00LjcwMSA0LjcwMmgyLjg4M2wzLjI1OS0zLjI2em04Ljc5OSA0LjI2Yy0yLjQ4NiAwLTQuNSAyLjAxNS00LjUgNC41czIuMDE0IDQuNSA0LjUgNC41YzIuNDg0IDAgNC41LTIuMDE1IDQuNS00LjVzLTIuMDE2LTQuNS00LjUtNC41em0tLjQ2OSA2LjQ4NGwtMS42ODgtMS42MzcuNjk1LS42OTcuOTkyLjk0IDIuMTE1LTIuMTY5LjY5Ny42OTYtMi44MTEgMi44Njd6Ii8+PC9zdmc+">
-                </div>
-                <ul>
-                    <li>Compra segura com 2FA.</li>
-                    <li>Avisos sobre compras e  entregas.</li>
-                    <li>Upsell com novas ofertas e  vantagens via SMS ou  Verified Calling.</li>
-                </ul>
-            </div>
-            <div class="item-uso">
-                <div>
-                    <img class="img-item-usos" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zLjg0OCAxOWgtLjg0OGMtLjc5NiAwLTEuNTU5LS4zMTYtMi4xMjEtLjg3OS0uNTYzLS41NjItLjg3OS0xLjMyNS0uODc5LTIuMTIxdi0zYzAtNy4xNzUgNS4zNzctMTMgMTItMTNzMTIgNS44MjUgMTIgMTN2M2MwIC43OTYtLjMxNiAxLjU1OS0uODc5IDIuMTIxLS41NjIuNTYzLTEuMzI1Ljg3OS0yLjEyMS44NzloLS44NDhjLTIuNjkgNC42MzMtNi45MDQgNS04LjE1MiA1LTEuMjQ4IDAtNS40NjItLjM2Ny04LjE1Mi01em0xNi4xNTItNS44NzZjLS42MDEuMjM2LTEuMjY5LS4xOC0xLjI2OS0uNzk3IDAtLjMwNC0uMDIyLS42MS0uMDUzLS45MTUtMS43NjEtLjI1NC0zLjYxOC0xLjkyNi0zLjY5OS0zLjcyMy0xLjMxNSAyLjAwNS00LjUyNSA0LjE3LTcuMDQ0IDQuMTcgMS4wODYtLjY5OSAxLjgzOS0yLjc3MyAxLjkwMy0zLjUwOC0uNTgxIDEuMDkyLTIuODk4IDMuMTM2LTQuNTUxIDMuNDg3bC0uMDE4LjQ4OWMwIC42MTktLjY2OSAxLjAzMi0xLjI2OS43OTd2My43NzFjLjI4Ny4yNTYuNjMyLjQ2NCAxLjA0MS41OTQuMjI1LjA3Mi40MTIuMjI0LjUyMS40MjQgMi4yMDYgNC4wNDYgNS40MjYgNC4wODcgNi40MzggNC4wODcuOTI5IDAgMy43MTktLjAzNSA1Ljg3Ny0zLjE2OS0xLjA3MS40MzMtMi4yNjUuNjA0LTMuNzU5LjY1My0uMzcuNi0xLjE4IDEuMDE2LTIuMTE4IDEuMDE2LTEuMjg4IDAtMi4zMzMtLjc4NC0yLjMzMy0xLjc1czEuMDQ1LTEuNzUgMi4zMzMtMS43NWMuOTMzIDAgMS43MzguNDExIDIuMTEyIDEuMDA1IDEuOS0uMDI2IDQuMzM2LS4zMzQgNS44ODgtMi42NDV2LTIuMjM2em0tMTEtLjYyNGMuNjg2IDAgMS4yNDMuNjcyIDEuMjQzIDEuNXMtLjU1NyAxLjUtMS4yNDMgMS41LTEuMjQzLS42NzItMS4yNDMtMS41LjU1Ny0xLjUgMS4yNDMtMS41em02IDBjLjY4NiAwIDEuMjQzLjY3MiAxLjI0MyAxLjVzLS41NTcgMS41LTEuMjQzIDEuNS0xLjI0My0uNjcyLTEuMjQzLTEuNS41NTctMS41IDEuMjQzLTEuNXptNS40NzgtMS41aDEuMzU3Yy0uODU2LTUuMTE4LTQuOTM3LTktOS44MzUtOS00Ljg5OCAwLTguOTc5IDMuODgyLTkuODM1IDloMS4zNTdjLjUyLTQuMDIzIDMuNDExLTcuNzIyIDguNDc4LTcuNzIyczcuOTU4IDMuNjk5IDguNDc4IDcuNzIyeiIvPjwvc3ZnPg==">
-                </div>
-                <ul>
-                    <li>Melhore taxas de abertura  utilizando alertas SMS para  confirmações.</li>
-                    <li>Economia de números com o  uso de um único número  máscara por todos os agentes.</li>
-                    <li>Verified Calling para  confirmação de  agendamentos.</li>
-                </ul>
-            </div>
-            <div class="item-uso">
-                <div>
-                    <img class="img-item-usos" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOC45MDUgMTRjLTIuMDI5IDIuNDAxLTQuODYyIDUuMDA1LTcuOTA1IDgtNS44OTMtNS44LTExLTEwLjEzNC0xMS0xNC4zNzEgMC02LjE1NCA4LjExNC03LjU4NyAxMS0yLjY3NiAyLjg2NS00Ljg3NSAxMS0zLjQ5OSAxMSAyLjY3NiAwIC43ODQtLjE3NSAxLjU3Mi0uNDk3IDIuMzcxaC02LjI3OGMtLjI1MyAwLS40ODYuMTM3LS42MS4zNThsLS44MTMgMS40NS0yLjI3LTQuNDM3Yy0uMTEyLS4yMTktLjMzMS0uMzY0LS41NzYtLjM4LS4yNDYtLjAxNi0uNDgyLjA5Ny0uNjIyLjI5OWwtMS44OCAyLjcxaC0xLjIyN2MtLjM0Ni0uNTk4LS45OTItMS0xLjczMi0xLTEuMTAzIDAtMiAuODk2LTIgMnMuODk3IDIgMiAyYy43NCAwIDEuMzg2LS40MDIgMS43MzItMWgxLjk1NmMuMjI4IDAgLjQ0MS0uMTExLjU3My0uMjk3bC45ODktMS40MDYgMi4yNTYgNC41NTljLjExNC4yMjkuMzQzLjM3OS41OTguMzg5LjI1Ni4wMTEuNDk2LS4xMTguNjI5LS4zMzdsMS43NTktMi45MDhoOC4wMTN2MmgtNS4wOTV6Ii8+PC9zdmc+">
-                </div>
-                <ul>
-                    <li>Acesso seguro com 2FA.</li>
-                    <li>Melhore o agendamento e  reduza faltas com lembretes por  SMS.</li>
-                    <li>Tokens de autorização para  procedimentos com 2FA.</li>
-                    <li>Verified Calling para avisos de  resultados e agendamentos.</li>
-                </ul>
-            </div>
+        <h1 class="CPaaS-usuarios-titulo">Utilidades do CPaaS</h1>
+        <div class="CPaaS-usuarios-container">
+          <div class="CPaaS-usuarios-container-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMyA2LjA2NnYxMi4wNjVsLTExLjAwMSA1Ljg2OS0xMS01Ljg2OXYtMTIuMTMxbDExLTYgMTEuMDAxIDYuMDY2em0tMjEuMDAxIDExLjQ2NWw5LjUgNS4wNjl2LTEwLjU3bC05LjUtNC45NDZ2MTAuNDQ3em0yMC4wMDEtMTAuMzg4bC05LjUwMSA0Ljg4OXYxMC41NjhsOS41MDEtNS4wNjl2LTEwLjM4OHptLTUuNTIgMS43MTZsLTkuNTM0LTQuOTY0LTQuMzQ5IDIuMzczIDkuNDA0IDQuODk2IDQuNDc5LTIuMzA1em0tOC40NzYtNS41NDFsOS41NjUgNC45OCAzLjgzMi0xLjk3Mi05LjQwNS01LjE4NS0zLjk5MiAyLjE3N3oiLz48L3N2Zz4=">
+            <p>Logística</p>
+            <ul>
+              <li>Acesso seguro com 2FA.</li>
+              <li>Uso de números mascarados  para proteção de funcionário  e cliente.</li>
+              <li>Mantenha o cliente  informado sobre entrega e  serviços.</li>
+              <li>Verified calling para  confirmação de entregas.</li>
+            </ul>
+          </div>
+          <div class="CPaaS-usuarios-container-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTMuMjk5IDMuNzRjLS4yMDctLjIwNi0uMjk5LS40NjEtLjI5OS0uNzExIDAtLjUyNC40MDctMS4wMjkgMS4wMi0xLjAyOS4yNjIgMCAuNTIyLjEuNzIxLjI5OGwzLjc4MyAzLjc4M2MtLjc3MS4xMTctMS41LjM2My0yLjE1OC43MjZsLTMuMDY3LTMuMDY3em0zLjkyIDE0Ljg0bC0uNTcxIDEuNDJoLTkuMjk2bC0zLjU5Ny04Ljk2MS0uMDE2LS4wMzloOS40NDFjLjE3MS0uNzIxLjQ2LTEuMzk1Ljg0OC0yaC0xNC4wMjh2MmguNjQzYy41MzUgMCAxLjAyMS4zMDQgMS4yNTYuNzg0bDQuMTAxIDEwLjIxNmgxMmwxLjIxMS0zLjAxNWMtLjY5OS0uMDMtMS4zNjgtLjE3MS0xLjk5Mi0uNDA1em0tNi41MTgtMTQuODRjLjIwNy0uMjA2LjI5OS0uNDYxLjI5OS0uNzExIDAtLjUyNC0uNDA3LTEuMDI5LTEuMDItMS4wMjktLjI2MSAwLS41MjIuMS0uNzIuMjk4bC00LjcwMSA0LjcwMmgyLjg4M2wzLjI1OS0zLjI2em04Ljc5OSA0LjI2Yy0yLjQ4NiAwLTQuNSAyLjAxNS00LjUgNC41czIuMDE0IDQuNSA0LjUgNC41YzIuNDg0IDAgNC41LTIuMDE1IDQuNS00LjVzLTIuMDE2LTQuNS00LjUtNC41em0tLjQ2OSA2LjQ4NGwtMS42ODgtMS42MzcuNjk1LS42OTcuOTkyLjk0IDIuMTE1LTIuMTY5LjY5Ny42OTYtMi44MTEgMi44Njd6Ii8+PC9zdmc+">
+            <p>Compras online</p>
+            <ul>
+              <li>Compra segura com 2FA.</li>
+              <li>Avisos sobre compras e  entregas.</li>
+              <li>Upsell com novas ofertas e  vantagens via SMS ou  Verified Calling.</li>
+            </ul>
+          </div>
+          <div class="CPaaS-usuarios-container-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zLjg0OCAxOWgtLjg0OGMtLjc5NiAwLTEuNTU5LS4zMTYtMi4xMjEtLjg3OS0uNTYzLS41NjItLjg3OS0xLjMyNS0uODc5LTIuMTIxdi0zYzAtNy4xNzUgNS4zNzctMTMgMTItMTNzMTIgNS44MjUgMTIgMTN2M2MwIC43OTYtLjMxNiAxLjU1OS0uODc5IDIuMTIxLS41NjIuNTYzLTEuMzI1Ljg3OS0yLjEyMS44NzloLS44NDhjLTIuNjkgNC42MzMtNi45MDQgNS04LjE1MiA1LTEuMjQ4IDAtNS40NjItLjM2Ny04LjE1Mi01em0xNi4xNTItNS44NzZjLS42MDEuMjM2LTEuMjY5LS4xOC0xLjI2OS0uNzk3IDAtLjMwNC0uMDIyLS42MS0uMDUzLS45MTUtMS43NjEtLjI1NC0zLjYxOC0xLjkyNi0zLjY5OS0zLjcyMy0xLjMxNSAyLjAwNS00LjUyNSA0LjE3LTcuMDQ0IDQuMTcgMS4wODYtLjY5OSAxLjgzOS0yLjc3MyAxLjkwMy0zLjUwOC0uNTgxIDEuMDkyLTIuODk4IDMuMTM2LTQuNTUxIDMuNDg3bC0uMDE4LjQ4OWMwIC42MTktLjY2OSAxLjAzMi0xLjI2OS43OTd2My43NzFjLjI4Ny4yNTYuNjMyLjQ2NCAxLjA0MS41OTQuMjI1LjA3Mi40MTIuMjI0LjUyMS40MjQgMi4yMDYgNC4wNDYgNS40MjYgNC4wODcgNi40MzggNC4wODcuOTI5IDAgMy43MTktLjAzNSA1Ljg3Ny0zLjE2OS0xLjA3MS40MzMtMi4yNjUuNjA0LTMuNzU5LjY1My0uMzcuNi0xLjE4IDEuMDE2LTIuMTE4IDEuMDE2LTEuMjg4IDAtMi4zMzMtLjc4NC0yLjMzMy0xLjc1czEuMDQ1LTEuNzUgMi4zMzMtMS43NWMuOTMzIDAgMS43MzguNDExIDIuMTEyIDEuMDA1IDEuOS0uMDI2IDQuMzM2LS4zMzQgNS44ODgtMi42NDV2LTIuMjM2em0tMTEtLjYyNGMuNjg2IDAgMS4yNDMuNjcyIDEuMjQzIDEuNXMtLjU1NyAxLjUtMS4yNDMgMS41LTEuMjQzLS42NzItMS4yNDMtMS41LjU1Ny0xLjUgMS4yNDMtMS41em02IDBjLjY4NiAwIDEuMjQzLjY3MiAxLjI0MyAxLjVzLS41NTcgMS41LTEuMjQzIDEuNS0xLjI0My0uNjcyLTEuMjQzLTEuNS41NTctMS41IDEuMjQzLTEuNXptNS40NzgtMS41aDEuMzU3Yy0uODU2LTUuMTE4LTQuOTM3LTktOS44MzUtOS00Ljg5OCAwLTguOTc5IDMuODgyLTkuODM1IDloMS4zNTdjLjUyLTQuMDIzIDMuNDExLTcuNzIyIDguNDc4LTcuNzIyczcuOTU4IDMuNjk5IDguNDc4IDcuNzIyeiIvPjwvc3ZnPg==">
+            <p>Call Center</p>
+            <ul>
+              <li>Melhore taxas de abertura  utilizando alertas SMS para  confirmações.</li>
+              <li>Economia de números com o  uso de um único número  máscara por todos os agentes.</li>
+              <li>Verified Calling para  confirmação de  agendamentos.</li>
+            </ul>
+          </div>
+          <div class="CPaaS-usuarios-container-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOC45MDUgMTRjLTIuMDI5IDIuNDAxLTQuODYyIDUuMDA1LTcuOTA1IDgtNS44OTMtNS44LTExLTEwLjEzNC0xMS0xNC4zNzEgMC02LjE1NCA4LjExNC03LjU4NyAxMS0yLjY3NiAyLjg2NS00Ljg3NSAxMS0zLjQ5OSAxMSAyLjY3NiAwIC43ODQtLjE3NSAxLjU3Mi0uNDk3IDIuMzcxaC02LjI3OGMtLjI1MyAwLS40ODYuMTM3LS42MS4zNThsLS44MTMgMS40NS0yLjI3LTQuNDM3Yy0uMTEyLS4yMTktLjMzMS0uMzY0LS41NzYtLjM4LS4yNDYtLjAxNi0uNDgyLjA5Ny0uNjIyLjI5OWwtMS44OCAyLjcxaC0xLjIyN2MtLjM0Ni0uNTk4LS45OTItMS0xLjczMi0xLTEuMTAzIDAtMiAuODk2LTIgMnMuODk3IDIgMiAyYy43NCAwIDEuMzg2LS40MDIgMS43MzItMWgxLjk1NmMuMjI4IDAgLjQ0MS0uMTExLjU3My0uMjk3bC45ODktMS40MDYgMi4yNTYgNC41NTljLjExNC4yMjkuMzQzLjM3OS41OTguMzg5LjI1Ni4wMTEuNDk2LS4xMTguNjI5LS4zMzdsMS43NTktMi45MDhoOC4wMTN2MmgtNS4wOTV6Ii8+PC9zdmc+">
+            <p>Saúde</p>
+            <ul>
+              <li>Acesso seguro com 2FA.</li>
+              <li>Melhore o agendamento e  reduza faltas com lembretes por  SMS.</li>
+              <li>Tokens de autorização para  procedimentos com 2FA.</li>
+              <li>Verified Calling para avisos de  resultados e agendamentos.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="CPaaS CPaaS-listas">
-
         <aside class="CpaaS-listas-vantagem">
           <h1 class="CPaaS-listas-vantagem-titulo">Vantagens Telecall</h1>
           <div  class="CPaaS-listas-vantagem-item">
-            <span class="span-vantagem">Confiança e Agilidade</span>
+            <span>Confiança e Agilidade</span>
             <p>Empresa que já conhecem e confiam</p>
           </div>
 
           <div class="CPaaS-listas-vantagem-item">
-            <span class="span-vantagem">Garantia de velocidade</span>
+            <span>Garantia de velocidade</span>
             <p>Aplicativos de rápida implementação</p>
           </div>
 
           <div  class="CPaaS-listas-vantagem-item">
-            <span class="span-vantagem">Rede</span>
+            <span>Rede</span>
             <p>Rede própria de alta capacidade e controle total de ponta-a-ponta</p>
           </div>
 
           <div class="CPaaS-listas-vantagem-item">
-            <span class="span-vantagem">Suporte ao cliente</span>
+            <span>Suporte ao cliente</span>
             <p>Representantes locais de vendas e suporte</p>
           </div>
 
           <div  class="CPaaS-listas-vantagem-item">
-            <span class="span-vantagem">Preço</span>
+            <span>Preço</span>
             <p>Melhor custo benefício para um conjunto completo de recursos e serviços</p>
           </div>
         </aside> 

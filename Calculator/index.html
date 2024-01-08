@@ -9,38 +9,51 @@
 </head>
 <body>
     <div class="container-calc">
-        <div id="tela"><span></span></div>
-        <div  id="teclado">
+        <div id="tela">
+            <span id="previous-operation"></span>
+            <span id="current-operetion"></span>
+        </div>
+        <div id="teclado">
             <div class="row">
-                <div class="num col-4 m-1">1</div>
-                <div class="num col-4 m-1">2</div>
-                <div class="num col-4 m-1">3</div>
+                <button class="num col-4 m-1">1</button>
+                <button class="num col-4 m-1">2</button>
+                <button class="num col-4 m-1">3</button>
             </div>
             <div class="row">
-                <div class="num col-4 m-1">4</div>
-                <div class="num col-4 m-1">5</div>
-                <div class="num col-4 m-1">6</div>
-            </div>
-            <div class="row"> 
-                <div class="num col-4 m-1">7</div>
-                <div class="num col-4 m-1">8</div>
-                <div class="num col-4 m-1">9</div>
+                <button class="num col-4 m-1">4</button>
+                <button class="num col-4 m-1">5</button>
+                <button class="num col-4 m-1">6</button>
             </div>
             <div class="row">
-                <div class="num col m-1">0</div>
-                <div class="num col m-1" id="iqualite"> = </div>            
+                <button class="num col-4 m-1">7</button>
+                <button class="num col-4 m-1">8</button>
+                <button class="num col-4 m-1">9</button>
+            </div>
+            <div class="row">
+                <button class="num col-8 m-1">0</button>
+                <button class="col-4 m-1" id="iqualite">=</button>
             </div>
         </div>
         <div class="janela-flutuante">
-            <button id="btn-1"> + </button>
-            <button> - </button>
-            <button> * </button>
-            <button> : </button>
-            <button></button>
-            <button id="btn-2"></button>
-        </div>          
-    </div>
+            <button class="operator" id="btn-1">DEL</button>
+            <button class="operator" >C</button>
+            <button class="operator" >+</button>
+            <button class="operator">-</button>
+            <button class="operator">*</button>
+            <button class="operator" id="btn-2">:</button>                              
+            
+        </div>
+        <div class="janela-flutuante-C">
+            <button class="operator" id="btn-1">(</button>
+            <button class="operator">)</button>
+            <button class="operator">√</button> 
+            <button class="operator">^</button>
+            <button class="operator">%</button>
+            <button class="operator" id="btn-2">Log</button>
+        </div>
+      </div>     
     
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="Myscript.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+1. Personal Portfolio Website
+2. Digital Clock
+3. To-Do List App
+4. Calculator
+5. Countdown Timer
+6. Quiz App
+7. Image Slider
+8. Responsive Navbar
+9. Weather App
+10. BMI Calculator
+11. Memory Game
+12. Snake Game
+13. Analog Clock
+14. Animated Login Form
+15. Currency Converter
+16. Animated Counter
+17. Contact Form
+18. Chat Application
+19. Drag and Drop Game
+20. Virtual Keyboard
+21. Music Player
+22. Tic Tac Toe Game
+23. Animated Background
+24. Drawing App
+25. Password Generator
+26. Recipe Book
+27. Expense Tracker
+28. Typing Speed Test
+29. Flashcard Quiz
+30. Random Quote Generator
+31. Countdown to a Date
+32. Digital Resume
+33. Video Background
+34. 404 Error Page
+35. Star Rating System
+36. Progress Bar
+37. Memory Card Game
+38. Analog Clock with World Time
+39. Animated Loading Spinner
+40. Light/Dark Mode Toggle
+41. Stopwatch

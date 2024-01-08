@@ -1,9 +1,5 @@
-const button = document.querySelector('.contrast-toggle');
-const letras = document.querySelectorAll('p, a,');
-const corpo = document.getElementById('body');
+const toggleContrast = document.querySelector(`toggle`)
 
-
-button.addEventListener('click', e => {
-	button.classList.toggle('is-toggled');
-	document.body.classList.toggle('is-high-contrast');
-});
+toggleContrast.addEventListener(`click`, e => {
+	Button.classList.add('fa-sun')
+})

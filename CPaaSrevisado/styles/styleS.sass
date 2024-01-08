@@ -1,0 +1,95 @@
+@use 'varials' 
+@use 'mixins' 
+
+*
+    color: rgb(70, 70, 70)
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Raleway', sans-serif
+
+body
+    height: 100dvh
+    height: 100vh  
+    background: rgb(255, 255, 255)
+
+    a
+        text-decoration: none
+        color: black
+
+        &:hover
+            text-decoration: none
+            color: varials.$cor600
+    
+    ul
+        list-style: none
+
+.header   
+    padding: 20px
+    width: 100%
+    height: 80px
+    background-color: transparent
+    
+    @include mixins.flex-row-center-between
+    
+    
+
+    &-nav
+        @include mixins.flex-row-center-between /* incluindo configuração da pasta 'mixins' */
+        
+    &-nav-buttons
+        width: 250px
+        height: 50px
+        column-gap: 20px
+        @include mixins.flex-row-center-center
+
+    &-nav-list
+        width: 500px
+        height: 19px 
+        padding: 0
+        margin: 0  
+        font-weight: bold     
+        @include mixins.flex-row-center-spacearound
+
+        &-dropdown
+            &-content
+                display: none
+                &:hover
+                    display: flex
+                    flex-direction: column
+
+    &-nav-list-toggle
+        cursor: pointer
+        width: 20px
+        margin: 0 10px
+                   
+
+    &-logo
+        width: auto
+        height: auto
+
+        img
+            width: 80%
+            height: auto
+    
+    &-nav-list     
+        font-size: 1.2em 
+
+
+
+
+
+footer 
+  @include mixins.flex-column-center-center
+  width: 100%
+  height: 100px
+
+.redes 
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 20px
+  width: 100px
+
+.cor-muda-svg:hover 
+  fill: #2AACE4

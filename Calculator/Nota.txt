@@ -1,0 +1,50 @@
+Os símbolos da calculadora servem para realizar operações matemáticas básicas, como adição, subtração, multiplicação, divisão, raiz quadrada, potenciação e logaritmização.
+
+Adição
+
+O símbolo da adição é o +. Ele serve para somar dois ou mais números. Por exemplo, 5 + 2 = 7.
+
+Subtração
+
+O símbolo da subtração é o -. Ele serve para subtrair dois ou mais números. Por exemplo, 10 - 5 = 5.
+
+Multiplicação
+
+O símbolo da multiplicação é o x ou *. Ele serve para multiplicar dois ou mais números. Por exemplo, 2 * 3 = 6.
+
+Divisão
+
+O símbolo da divisão é o /. Ele serve para dividir dois ou mais números. Por exemplo, 12 / 4 = 3.
+
+Raiz quadrada
+
+O símbolo da raiz quadrada é o √. Ele serve para calcular a raiz quadrada de um número. Por exemplo, √25 = 5.
+
+Potenciação
+
+O símbolo da potenciação é o ^. Ele serve para elevar um número a um expoente. Por exemplo, 2^2 = 4.
+
+Logaritmização
+
+O símbolo da logaritmização é o log. Ele serve para calcular o logaritmo de um número. Por exemplo, log(100) = 2.
+
+Além desses símbolos básicos, existem outros símbolos que podem ser encontrados em calculadoras científicas, como:
+
+Sin(x): seno de x
+Cos(x): cosseno de x
+Tan(x): tangente de x
+Cot(x): cotangente de x
+Sec(x): secante de x
+Csc(x): cossecante de x
+Arcsin(x): arco seno de x
+Arccos(x): arco cosseno de x
+Arctan(x): arco tangente de x
+Arccot(x): arco cotangente de x
+Arcsec(x): arco secante de x
+Arccsc(x): arco cossecante de x
+Log(x): logaritmo na base 10 de x
+ln(x): logaritmo natural de x
+Exp(x): exponencial de x
+Factorial(x): fatorial de x
+Pi: constante matemática pi
+E: constante matemática e
