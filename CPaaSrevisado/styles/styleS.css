@@ -113,7 +113,58 @@ body ul {
   flex-direction: row;
 }
 .FA-topo-desc {
+  position: relative;
   width: 500px;
+  height: 280px;
+}
+.FA-topo-desc img {
+  position: absolute;
+}
+
+.FA-funcao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  width: 100%;
+}
+.FA-funcao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+.FA-funcao-container-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+  column-gap: 30px;
+}
+.FA-funcao-container-top-item {
+  padding: 10px;
+  width: 300px;
+}
+.FA-funcao-container-top-item img {
+  display: block;
+  margin: auto;
+}
+.FA-funcao-container-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  font-weight: bold;
+  color: #0F587D;
+  width: auto;
+  column-gap: 30px;
+}
+.FA-funcao-container-down-item {
+  width: 300px;
 }
 
 footer {

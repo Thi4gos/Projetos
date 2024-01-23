@@ -92,9 +92,38 @@ body
     column-gap: 100px
     flex-direction: row
     &-desc
+        position: relative
         width: 500px
+        height: 280px
+        img
+            position: absolute
 
-
+.FA-funcao
+    @include mixins.flex-column-center-center
+    row-gap: 30px
+    width: 100%
+    &-container
+        @include mixins.flex-column-center-center 
+        row-gap: 30px
+        &-top
+            @include mixins.flex-row-center-center 
+            width: auto
+            column-gap: 30px
+            &-item
+                padding: 10px
+                width: 300px
+                img
+                    display: block
+                    margin: auto
+        &-down    
+            @include mixins.flex-row-center-center
+            text-align: center   
+            font-weight: bold
+            color: varials.$cor800      
+            width: auto
+            column-gap: 30px
+            &-item               
+                width: 300px
 footer 
   @include mixins.flex-column-center-center
   width: 100%

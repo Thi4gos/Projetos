@@ -59,6 +59,12 @@ body {
     width: 100%;
     height: 200px;
 }
+
+#current-operetion {
+    font-weight: bold;
+    color: white;
+}
+
 #teclado {
     border-radius:  0 0 15px 15px;
     z-index: 11;
