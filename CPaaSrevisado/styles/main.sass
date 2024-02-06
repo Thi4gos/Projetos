@@ -82,17 +82,18 @@ body
         
 .CPaaS
     margin: auto
-    height: 1100px
-    width: 80%        
+    height: auto
+    width: auto       
         
 .CPaaS-top
-    @include mixins.flex-colunm-start-center-wrap 
+    @include mixins.flex-row-center-center
+    column-gap: 20px
+    width: auto
+    margin: 0 0 80px 0
      
     &-principal
-        @include mixins.flex-column-center-center
-        margin: 50px 0 0  0
-        padding: 50px 0 0 0
-        height: 500px
+        @include mixins.flex-column-start-center
+        height: auto
         width: 500px
 
         &-titulo
@@ -107,24 +108,29 @@ body
 
     &-div-down
         @include mixins.flex-column-center-center
-        margin: 50px 0 0 0
-        width: 700px
-        height: 500px
+        margin: 20px 0 0 0
+        width: 650px
+        height: auto
 
         &-desc
             font-weight: bold
             font-size: 1.3em
 
             &-btn
-                padding: 20px
-
+                @include mixins.flex-start-center
+                width: 100%
+                column-gap: 25px
                 button
-                    margin: 0 10px
+                    font-weight: bold
+                    width: 40%
+                    height: 45px
+                                   
+                
 
     &-img
         margin: 50px 0 0 0
         height: 500px
-        width: 500px
+        width: auto
 
         img
             width: 650px
@@ -135,7 +141,6 @@ body
 .CPaaS-solucao
     @include mixins.flex-column-center-center
     row-gap: 30px
-
 
     &-titulo
         @include mixins.flex-column-center-center
@@ -149,11 +154,18 @@ body
 
     &-solucoes
         overflow: hidden
+        background-color: varials.$corPrincipal
         padding: 12px
-        margin: 10px
+        margin: 15px
         border: 5px solid gray
         border-radius: 12px
-            
+        transition: .3s ease-in
+        &:hover
+            transform: scale(1.1)
+            border: 3px solid black
+            h1
+                
+        
 
     &-detalhe
         font-size: 1.3em
@@ -171,7 +183,7 @@ body
             color: #2AACE4
             margin: auto          
             width: 600px
-            transition: text-shadow .6s ease-in
+            transition: text-shadow .2s ease-in
             cursor: default
 
             &:hover
@@ -182,6 +194,7 @@ body
     @include mixins.flex-column-center-center
     row-gap: 30px
     height: 700px
+    width: 90%
 
     &-titulo
         position: relative
@@ -219,7 +232,7 @@ body
 .CPaaS-listas
     @include mixins.flex-row-center-center
     column-gap: 50px
-    height: 700px
+    height: 450px
 
     &-vantagem
         &-item

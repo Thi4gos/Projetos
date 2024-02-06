@@ -58,11 +58,38 @@ body {
     background-color: rgb(0, 0, 86);
     width: 100%;
     height: 200px;
+    position: relative;
 }
 
 #current-operetion {
     font-weight: bold;
     color: white;
+    width: 360px;
+    height: 50%;
+    top: 50%;
+    text-align: end;
+    font-size: calc(20 / 100 * 360px);
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+}
+
+.font-shrink-animation {
+    transition: font-size 0.3s ease; /* Pode ajustar a duração e a função de animação conforme desejar */
+}
+
+#previous-operation {
+    font-weight: bold;
+    color: white;
+    width: 360px;
+    height: 50%;
+    top: 0%;
+    text-align: end;
+    font-size: 25pt;
+    padding: 10px;
+    padding-top: 50px;
+    position: absolute;
 }
 
 #teclado {
@@ -151,7 +178,23 @@ body {
     border: none;
     transition: .2s ease-out;
 }
-  
+.operator-ex {
+    width: 50px;
+    height: 50px;
+    background-color: #353535;
+    color: #989898;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease-out;
+}  
+.operator-ex:hover {
+    color: white;
+    background-color:  #181818;
+}
+.operator-ex:active {
+    transform: scale(.9);
+}
 .operator:hover {
     color: white;
     background-color:  #181818;
@@ -160,15 +203,25 @@ body {
     transform: scale(.9);
 }
 
-#btn-1 {
+.btn-1 {
     border-radius: 12px 12px 0 0;
 }
-#btn-2 {
-   
+#btn-2 {  
     border-radius:0 0 12px 12px;
 }
 
+.backclear {
+    width: 50px;
+    height: 50px;
+    background-color: #353535;
+    color: #989898;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease-out;
+}  
   
-
-  
-  
+.backclear:hover {
+    color: white;
+    background-color:  #181818;
+}

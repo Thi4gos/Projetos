@@ -45,9 +45,26 @@
     align-items: start
     justify-content: center
 
+@mixin flex-column-start-center  
+    display: flex
+    flex-direction: column
+    align-items: start
+    justify-content: center
+
+@mixin flex-column-start-end
+    display: flex
+    flex-direction: column
+    align-items: start
+    justify-content: end
+
 @mixin flex-colunm-start-center-wrap
     display: flex
     flex-direction: column
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+
+@mixin flex-start-center
+    display: flex
+    align-items: center
+    justify-content: flex-start

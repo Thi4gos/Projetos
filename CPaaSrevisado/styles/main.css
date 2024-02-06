@@ -90,25 +90,25 @@ body ul {
 
 .CPaaS {
   margin: auto;
-  height: 1100px;
-  width: 80%;
+  height: auto;
+  width: auto;
 }
 
 .CPaaS-top {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 20px;
+  width: auto;
+  margin: 0 0 80px 0;
 }
 .CPaaS-top-principal {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  margin: 50px 0 0 0;
-  padding: 50px 0 0 0;
-  height: 500px;
+  height: auto;
   width: 500px;
 }
 .CPaaS-top-principal-titulo {
@@ -133,24 +133,30 @@ body ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 0 0;
-  width: 700px;
-  height: 500px;
+  margin: 20px 0 0 0;
+  width: 650px;
+  height: auto;
 }
 .CPaaS-top-div-down-desc {
   font-weight: bold;
   font-size: 1.3em;
 }
 .CPaaS-top-div-down-desc-btn {
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  column-gap: 25px;
 }
 .CPaaS-top-div-down-desc-btn button {
-  margin: 0 10px;
+  font-weight: bold;
+  width: 40%;
+  height: 45px;
 }
 .CPaaS-top-img {
   margin: 50px 0 0 0;
   height: 500px;
-  width: 500px;
+  width: auto;
 }
 .CPaaS-top-img img {
   width: 650px;
@@ -186,10 +192,16 @@ body ul {
 }
 .CPaaS-solucao-solucoes {
   overflow: hidden;
+  background-color: #2AACE4;
   padding: 12px;
-  margin: 10px;
+  margin: 15px;
   border: 5px solid gray;
   border-radius: 12px;
+  transition: 0.3s ease-in;
+}
+.CPaaS-solucao-solucoes:hover {
+  transform: scale(1.1);
+  border: 3px solid black;
 }
 .CPaaS-solucao-detalhe {
   font-size: 1.3em;
@@ -206,7 +218,7 @@ body ul {
   color: #2AACE4;
   margin: auto;
   width: 600px;
-  transition: text-shadow 0.6s ease-in;
+  transition: text-shadow 0.2s ease-in;
   cursor: default;
 }
 .CPaaS-solucao-detalhe p:hover {
@@ -221,6 +233,7 @@ body ul {
   justify-content: center;
   row-gap: 30px;
   height: 700px;
+  width: 90%;
 }
 .CPaaS-usuarios-titulo {
   position: relative;
@@ -275,7 +288,7 @@ body ul {
   align-items: center;
   flex-direction: row;
   column-gap: 50px;
-  height: 700px;
+  height: 450px;
 }
 .CPaaS-listas-vantagem-item {
   margin: 15px 0;
