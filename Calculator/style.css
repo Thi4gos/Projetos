@@ -65,28 +65,25 @@ body {
     font-weight: bold;
     color: white;
     width: 360px;
-    height: 50%;
+    height: 90px;
     top: 50%;
     text-align: end;
-    font-size: calc(20 / 100 * 360px);
-    padding: 10px;
+    padding: 0 10px;
+    margin-top: 10px;
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
-}
-
-.font-shrink-animation {
-    transition: font-size 0.3s ease; /* Pode ajustar a duração e a função de animação conforme desejar */
+    font-size: calc(20 / 100 * 360px);
 }
 
 #previous-operation {
     font-weight: bold;
-    color: white;
+    color: rgb(139, 139, 139);
     width: 360px;
     height: 50%;
     top: 0%;
     text-align: end;
-    font-size: 25pt;
+    font-size: 20pt;
     padding: 10px;
     padding-top: 50px;
     position: absolute;
@@ -129,6 +126,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    font-weight: bold;
     border: 2px solid white;
     width: 120px;
     height: 100px;
