@@ -1,0 +1,45 @@
+/* Estilos para o darkmode */
+.dark-mode {
+    color: white; /* Mudando a cor do ícone para branco */
+    background-color: black; /* Mudando o fundo para preto */
+    
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:wheat;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  
+}
+
+#darkModeButton{
+  color: #af40ff ;
+  font-size:20px;
+  background-color: transparent ;
+  border:0px;
+  cursor: pointer;
+}
+
+
+#decreaseFontButton{
+  color: #af40ff ;
+  font-size:20px;
+  background-color: transparent ;
+  border:0px;
+  cursor: pointer;
+}
+
+
+#increaseFontButton{
+  color: #af40ff ;
+  font-size:20px;
+  background-color: transparent ;
+  border:0px;
+  cursor: pointer;
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+
+
+}
+
+
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+input[type="submit"],
+input[type="button"] {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 49%;
+    background-color: #ffffff;
+    /* Altera o fundo para preto */
+    color: #000000;
+    /* Cor do texto branco */
+    border: 0.8px #000
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #fff;
+    /* Cor de fundo branca ao passar o mouse */
+    color: #000;
+    /* Cor do texto preto */
+    border: 1.5px solid #000;
+    /* Adiciona borda preta */
+
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.menu {
+    margin: 10px auto;
+}
+
+.container {
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+    padding: 10px 80px 30px 80px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.212);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Adiciona posição relativa para posicionamento absoluto da imagem */
+    border: 1px solid #ccc;
+}
+
+h1 {
+    border-bottom: 3px solid #000000;
+    /* Linha vermelha abaixo do h2 */
+}
+
+.logo {
+    position: absolute;
+    top: -30px;
+    /* Ajusta a distância do topo */
+    right: 150px;
+    /* Ajusta a distância da direita */
+    width: 7cm;
+    /* Define a largura da imagem */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    input[type="submit"],
+    input[type="button"] {
+        width: 100%;
+    }
+}

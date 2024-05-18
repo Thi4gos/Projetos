@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Escuro Internet - Login</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="loginForm" action="erro.php" method="post">
+            <a href="../../index.html"><img src="../logo.png" class="logo"></a>
+            <h1>Login</h1>
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite seu Usuario..." required>
+            <span id="usuarioError" class="error"></span>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha..." required>
+            <span id="senhaError" class="error"></span>
+            <input type="submit" value="Enviar">
+            <input type="button" value="Voltar" onclick="window.location.href='index.php'">
+            Não consegue acessar sua conta? <a href="../../2fa/alterPass.html">Clique aqui </a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,31 @@
+/* Estilos para o Modo Escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Outros estilos para elementos específicos em Modo Escuro */
+
+/* Estilos para o Modo Escuro no Header */
+body.dark-mode header {
+    background-color: #222;
+    /* Cor de fundo do header no modo escuro */
+    color: #fff;
+    /* Cor do texto no modo escuro */
+}
+
+/* Estilos para o Modo Escuro na seção com id "clients" */
+body.dark-mode #clients {
+    background-color: #444;
+    /* Cor de fundo da seção "clients" no modo escuro */
+    color: #fff;
+    /* Cor do texto na seção "clients" no modo escuro */
+}
+
+/* Estilos para o Modo Escuro na seção com id "services" */
+body.dark-mode #services {
+    background-color: #555;
+    /* Cor de fundo da seção "services" no modo escuro */
+    color: #fff;
+    /* Cor do texto na seção "services" no modo escuro */
+}
